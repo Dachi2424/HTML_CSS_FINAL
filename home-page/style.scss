@@ -8,8 +8,6 @@
     gap: $gap;
 }
 
-
-
 * {
     margin: 0;
     padding: 0;
@@ -21,81 +19,88 @@ body {
     font-weight: 300;
 }
 
-
 header {
     width: 100%;
-    height: 180px;
+    height: 190px;
     background-color: black;
-    position: fixed;
-    top: 0;
-    font-size: 14px;
     color: white;
-    
-    nav{
-        background-color: #191919;
+    nav {
+        padding-inline: 80px 60px;
         height: 20%;
+        background-color: #191919;
         @include flex-box($just: space-between);
-        padding-inline: 80px;
-        
-        .navbar{
+        ul{
+            cursor: pointer;
             list-style: none;
-            @include flex-box($gap: 18px);
-            font-weight: 400;
-
+            @include flex-box($gap: 20px);
             li{
-
                 a{
                     text-decoration: none;
                     color: white;
+                    font-size: 14px;
                 }
             }
         }
         .social-media-logos{
-            font-size: 16px;
-            @include flex-box($gap: 16px);
-            margin-left: 300px;
-            padding-left: 40px;
-            
+            margin-left: 25%;
+            gap: 16px;
+            cursor: default;
+            & span:first-child{
+                font-size: 14px;
+            }
             span{
-
-                i{
-                    cursor: pointer;
-                }
+                cursor: pointer;
             }
         }
         .login-and-cart{
-            @include flex-box($gap: 18px);
-
-            .login-text{
-                font-weight: 200;
+            margin-right: 30px;
+            font-size: 14px;
+            @include flex-box($gap: 20px);
+            span{
                 cursor: pointer;
-                margin-top: 5px;
+                font-weight: 200;
             }
-            &:hover{
+            span:hover{
                 color: rgb(200, 200, 200);
             }
-
             img{
                 width: 26px;
+                cursor: pointer;
+                margin-bottom: 3px;
             }
         }
         .fa-bars{
-            margin-top: 5px;
             font-size: 26px;
-            cursor: pointer;
             display: none;
+            cursor: pointer;
         }
     }
     .lower-side{
+        width: 100%;
         height: 80%;
-        @include flex-box($dir: column, $gap: 14px);
-
-        img{
-            width: 200px;
-            cursor: pointer;
-        }
-        span{
-            font-size: 15px;
+        @include flex-box($dir: column, $gap: 10px);
+        font-size: 15px;
+        font-weight: 200;
+        a{
+            img{
+                width: 185px;
+                cursor: pointer;
+            }    
         }
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1920px) {
+    
 }
