@@ -42,7 +42,7 @@ header {
             }
         }
         .social-media-logos{
-            margin-left: 25%;
+            margin-left: 26%;
             gap: 16px;
             cursor: default;
             & span:first-child{
@@ -90,17 +90,146 @@ header {
     }
 }
 
+// main start
+// section1 start
 
-
-
-
-
-
-
-
-
-
-
-@media screen and (min-width: 1920px) {
-    
+.section1{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+    url(../images/banner_image.avif);
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    @include flex-box();
+    .banner-info {
+        @include flex-box($dir: column, $gap: 30px);
+        text-align: center;
+        width: 670px;
+        h1{
+            font-size: 88px;
+            line-height: 105px;
+        }
+        span{
+            font-size: 22px;
+            font-weight: 600;
+        }
+        button{
+            margin-top: 30px;
+        }
+        .darkening-btn{
+            font-size: 18px;
+            font-weight: bold;
+            background: transparent;
+            border: 3px solid black;
+            border-radius: 50px;
+            padding: 10px 18px;
+            transition: .4s;
+            cursor: pointer;
+            &:hover {
+                background-color: black;
+                color: white;
+                transition: .4s;
+            }
+        }
+    }
 }
+
+// section2 start
+
+.section2 {
+    height: 80vh;
+    @include flex-box($gap: 30px);
+    div{
+        height: 440px;
+        width: 430px;
+        background-size: cover;
+        background-position: center;
+        @include flex-box();
+        &:nth-child(1){
+            background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+            url(../images/women_section_image.avif);
+            background-position: right;
+        }
+        &:nth-child(2){
+            background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), 
+            url(../images/men_section_image.avif);
+        }
+        &:nth-child(3){
+            background-image: url(../images/sales_section_image.avif);
+            background-position: right;
+        }
+        a{
+            color: white;
+            font-weight: bold;
+            font-size: 50px;
+            text-decoration: none;
+        }
+    }
+}   
+
+// section3 start
+
+.section3{
+    height: 86.7vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/section3_image.avif);
+    background-size: cover;
+    background-position: center 30%;
+    background-attachment: fixed;
+    color: white;
+    @include flex-box();
+    div {
+        text-align: center;
+        width: 830px;
+        p:first-child {
+            font-size: 72px;
+            font-weight: bold;
+            margin-bottom: -18px;
+        }        
+        p:nth-child(2) {
+            font-size: 72px;
+            font-weight: bold;
+            text-decoration: underline;
+            
+        }
+        p:nth-child(3) {
+            margin-top: 16px;
+            font-size: 15px;
+            line-height: 28px;
+            font-weight: 200;
+        }
+    }
+}
+
+// section 4 start
+
+.section4{
+    height: 54vh;
+    background-color: black;
+    @include flex-box($just: flex-start, $gap: 122px);
+    padding-inline: 310px;
+    img{
+        height: 200px;
+        object-fit: contain;
+        object-position: center;
+        
+        &:nth-child(1){
+            width: 148px;
+            
+        }
+        &:nth-child(2){
+            width: 110px;
+            margin-right: 26px
+        }
+        &:nth-child(3){
+            width: 92px;
+            margin-right: 32px;
+        }
+        &:nth-child(4){
+            width: 100px;
+        }
+    }
+
+}
+
+// section 5 start
