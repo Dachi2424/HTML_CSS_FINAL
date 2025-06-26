@@ -242,4 +242,88 @@ header .lower-side a img {
 }
 .section4 img:nth-child(4) {
   width: 100px;
+}
+
+.section5 {
+  height: 110vh;
+  padding-top: 90px;
+}
+.section5 h1 {
+  text-align: center;
+  font-size: 88px;
+  margin-bottom: 90px;
+}
+.section5 .product-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  padding-inline: 10px;
+}
+.section5 .product-container .fa-angle-left {
+  font-size: 20px;
+  margin-bottom: 70px;
+  cursor: pointer;
+}
+.section5 .product-container .fa-angle-left:hover {
+  color: rgb(130, 130, 130);
+}
+.section5 .product-container .product-card {
+  width: 390px;
+  height: 540px;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.section5 .product-container .product-card .product-image-box {
+  width: 100%;
+  height: 85%;
+  overflow: hidden;
+}
+.section5 .product-container .product-card .product-image-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.section5 .product-container .product-card .product-image-box img:hover {
+  transform: scale(1.1);
+  transition: 0.4s;
+}
+.section5 .product-container .product-card .new-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 2px 12px;
+}
+.section5 .product-container .product-card .im-product-text {
+  margin-top: 15px;
+  font-size: 15px;
+  font-weight: 200;
+}
+.section5 .product-container .product-card .product-price {
+  font-size: 15px;
+  font-weight: 200;
+}
+.section5 .product-container .fa-angle-right {
+  font-size: 20px;
+  margin-bottom: 70px;
+  cursor: pointer;
+}
+.section5 .product-container .fa-angle-right:hover {
+  color: rgb(130, 130, 130);
 }/*# sourceMappingURL=style.css.map */
