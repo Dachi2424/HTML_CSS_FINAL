@@ -330,7 +330,7 @@ header {
 
 // section6 start
 
-.section6 {
+.section6{
     height: 54vh;
     background-color: black;
     @include flex-box($dir: column, $gap: 5px);
@@ -350,3 +350,91 @@ header {
 
 // section7 start
 
+.section7{
+    .s7-image-container{
+        padding-top: 10px;
+        width: 98%;
+        min-height: 100vh;
+        margin-inline: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 1fr;
+        gap: 40px;
+        
+        .s7-image{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            &:nth-child(7){
+                display: none;
+            }
+            &:nth-child(8){
+                display: none;
+            }
+            &:nth-child(9){
+                display: none;
+            }
+            &:nth-child(10){
+                display: none;
+            }
+            &:nth-child(11){
+                display: none;
+            }
+            &:nth-child(12){
+                display: none;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                cursor: pointer;
+                transition: .3s;
+                &:hover{
+                    filter: brightness(30%);
+                    transition: .3s;
+                }
+                &:hover + a{
+                    display: inline;
+                }
+            }
+            a{
+                position: absolute;
+                z-index: 10;
+                right: 50%;
+                top: 50%;
+                transform: translate(50%, -50%);
+                color: white;
+                font-weight: bold;
+                text-decoration: none;
+                display: none;
+                
+            }
+        }
+    }
+    .darkening-btn{
+        font-size: 18px;
+        font-weight: bold;
+        background: transparent;
+        border: 3px solid black;
+        border-radius: 50px;
+        padding: 14px 26px;
+        transition: .4s;
+        margin: 32px auto;
+        display: block;
+        cursor: pointer;
+        &:hover {
+            background-color: black;
+            color: white;
+            transition: .4s;
+        }
+    }
+}
+
+//footer start
+
+footer {
+    height: 90vh;
+    background-color: black;
+    color: white;
+}
