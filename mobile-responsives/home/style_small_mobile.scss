@@ -1,0 +1,76 @@
+// responsive for small mobile
+
+@media screen and (max-width: 400px) {
+  .section3{
+    div{
+      width: 280px;
+    }
+  }
+
+  .section5{
+    .product-container{
+      .product-card{
+        &:nth-child(3){
+          display: none;
+        }
+      }
+    }
+  }
+
+  footer{
+    min-height: 80vh;
+    padding-bottom: 40px;
+    padding-top: 0;
+    form{
+      margin-bottom: 10px;
+      h1{
+        font-size: 30px;
+      }
+      .email-container{
+        label{
+          margin-left: 10px;
+        }
+        input{
+          width: 340px;
+          
+          margin-left: 10px;
+        }
+      }
+      .checkbox-container{
+        input{
+          margin-left: 10px;
+        }
+      }
+      button[type="submit"]{
+        width: 340px;
+        margin-left: 10px;
+      }
+    }
+    .address{
+      span{
+        font-size: 14px;
+      }
+    }
+    .social-media-logos{
+      margin-bottom: 20px;
+    }
+    span{
+      font-size: 12px;
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  footer{
+    form{
+      .email-container{
+        input{
+          width: 300px;
+        }
+      }
+      button[type="submit"]{
+        width: 300px;
+      }
+    }
+  }
+}
