@@ -39,6 +39,9 @@
             <span>Ideal weather,superb clothing</span>
         </div>
     </header>
+    <div class="floating-comment">
+        <img src="./additional-images/comment.png" alt="floating_comment">
+    </div>
     <main>
         <section class="section1">
             <div class="banner-info">
@@ -69,10 +72,12 @@
 
         </section>
         <section class="section4">
-            <img src="../additional-images/mountain_trip.png" alt="Mountain Trip logo">
-            <img src="../additional-images/lazy_bear.png" alt="Lazy Bear logo">
-            <img src="../additional-images/quick_round.png" alt="Quick Round logo">
-            <img src="../additional-images/fourth_logo.png" alt="SA logo">
+            <div class="grid-logo-container">
+                <img src="../additional-images/mountain_trip.png" alt="Mountain Trip logo">
+                <img src="../additional-images/lazy_bear.png" alt="Lazy Bear logo">
+                <img src="../additional-images/quick_round.png" alt="Quick Round logo">
+                <img src="../additional-images/fourth_logo.png" alt="SA logo">
+            </div>
         </section>
         <section class="section5">
             <h1>NEW <u>ARRIVALS</u></h1>
@@ -178,10 +183,14 @@
     <footer>
         <form>
             <h1>Subscribe Form</h1>
-            <label for="">Email*</label>
-            <input type="email" required>
-            <input type="checkbox" required>
-            <label for="">Yes, subscribe me to your newsletter.*</label>
+            <div class="email-container">
+                <label for="email">Email *</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="checkbox-container">
+                <input type="checkbox" id="check" required>
+                <label for="check">Yes, subscribe me to your newsletter. *</label>
+            </div>
             <button type="submit">Submit</button>
         </form>
         <div class="address">
@@ -191,11 +200,12 @@
             <span>San Francisco, CA 94158</span>
         </div>
         <ul class="social-media-logos">
-                <span><i class="fa-brands fa-facebook-f"></i></span>
-                <span><i class="fa-brands fa-instagram"></i></span>
-                <span><i class="fa-brands fa-pinterest-p"></i></span>
+            <span><i class="fa-brands fa-facebook-f"></i></span>
+            <span><i class="fa-brands fa-instagram"></i></span>
+            <span><i class="fa-brands fa-pinterest-p"></i></span>
         </ul>
-        <span>&#169;2035 by 30°F. Powered and secured by <a href="#">Wix</a></span>
+        <span>&#169;2035 by 30°F. Powered and secured by <a
+                href="https://manage.wix.com/account/websites?referralAdditionalInfo=Route">Wix</a></span>
     </footer>
 
 </body>

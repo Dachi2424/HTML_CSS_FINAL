@@ -93,9 +93,30 @@ header .lower-side a img {
   cursor: pointer;
 }
 
+.floating-comment {
+  width: 64px;
+  height: 64px;
+  border-radius: 20px;
+  background-color: black;
+  position: fixed;
+  z-index: 99999;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+}
+.floating-comment img {
+  width: 50%;
+  height: 50%;
+}
+
 .section1 {
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/banner_image.avif);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../images/banner_image.avif);
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
@@ -151,7 +172,7 @@ header .lower-side a img {
 }
 .section2 div {
   height: 440px;
-  width: 430px;
+  width: 435px;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -162,7 +183,7 @@ header .lower-side a img {
 }
 .section2 div:nth-child(1) {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../images/women_section_image.avif);
-  background-position: right;
+  background-position: 85% 50%;
 }
 .section2 div:nth-child(2) {
   background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), url(../images/men_section_image.avif);
@@ -179,7 +200,7 @@ header .lower-side a img {
 }
 
 .section3 {
-  height: 86.7vh;
+  height: 86.8vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/section3_image.avif);
   background-size: cover;
   background-position: center 30%;
@@ -216,33 +237,40 @@ header .lower-side a img {
   min-height: 54vh;
   background-color: black;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
-  gap: 122px;
-  flex-wrap: no-wrap;
-  padding-inline: 310px;
+  gap: 0;
 }
-.section4 img {
-  height: 200px;
+.section4 .grid-logo-container {
+  width: 65%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: 300px;
+  justify-items: center;
+  align-items: center;
+}
+.section4 .grid-logo-container img {
   -o-object-fit: contain;
      object-fit: contain;
   -o-object-position: center;
      object-position: center;
 }
-.section4 img:nth-child(1) {
-  width: 148px;
+.section4 .grid-logo-container img:nth-child(1) {
+  width: 145px;
+  height: 145px;
 }
-.section4 img:nth-child(2) {
+.section4 .grid-logo-container img:nth-child(2) {
   width: 110px;
-  margin-right: 26px;
+  height: 110px;
 }
-.section4 img:nth-child(3) {
-  width: 92px;
-  margin-right: 32px;
+.section4 .grid-logo-container img:nth-child(3) {
+  width: 93px;
+  height: 93px;
 }
-.section4 img:nth-child(4) {
+.section4 .grid-logo-container img:nth-child(4) {
   width: 100px;
+  height: 100px;
 }
 
 .section5 {
@@ -450,7 +478,142 @@ header .lower-side a img {
 }
 
 footer {
-  height: 90vh;
+  height: 94vh;
   background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0;
+}
+footer form {
+  margin-top: 45px;
+  margin-bottom: 76px;
+}
+footer form h1 {
+  font-size: 40px;
+  text-align: center;
+  font-weight: 600;
+}
+footer form .email-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+footer form .email-container label {
+  font-size: 14px;
+  font-weight: bold;
+}
+footer form .email-container input {
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  border-radius: 0;
+  padding: 6px 12px;
+  outline: none;
+  width: 386px;
+}
+footer form .checkbox-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 22px;
+}
+footer form .checkbox-container input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 1px solid white;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+}
+footer form .checkbox-container input:after {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: white;
+  font-size: 10px;
+  display: none;
+}
+footer form .checkbox-container input:checked::after {
+  display: unset;
+}
+footer form .checkbox-container label {
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+footer form button[type=submit] {
+  margin-top: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid white;
+  background-color: white;
+  width: 386px;
+  height: 42px;
+  font-family: "Poppins", sans-serif;
+  transition: 0.4s;
+}
+footer form button[type=submit]:hover {
+  color: white;
+  background-color: transparent;
+  transition: 0.4s;
+}
+footer .address {
+  font-weight: 200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 7px;
+  margin-bottom: 22px;
+}
+footer .address span {
+  font-size: 15px;
+}
+footer .address span:first-child {
+  cursor: pointer;
+}
+footer .social-media-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 18px;
+  margin-bottom: 45px;
+}
+footer .social-media-logos span {
+  cursor: pointer;
+}
+footer .social-media-logos span .fa-facebook-f {
+  font-size: 14px;
+}
+footer .social-media-logos span .fa-instagram {
+  font-size: 16px;
+}
+footer .social-media-logos span .fa-pinterest-p {
+  font-size: 16px;
+}
+footer span {
+  font-size: 14px;
+  font-weight: 200;
+}
+footer span a {
   color: white;
 }/*# sourceMappingURL=style.css.map */

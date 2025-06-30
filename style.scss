@@ -8,18 +8,19 @@
     gap: $gap;
 }
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
+body{
     font-family: "Poppins", sans-serif;
     font-weight: 300;
+    
 }
 
-header {
+header{
     width: 100%;
     height: 190px;
     background-color: black;
@@ -90,12 +91,32 @@ header {
     }
 }
 
+//header end
+//floating-comment:
+
+.floating-comment{
+    width: 64px;
+    height: 64px;
+    border-radius: 20px;
+    background-color: black;
+    position: fixed;
+    z-index: 99999;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    @include flex-box();
+    img{
+        width: 50%;
+        height: 50%;
+    }
+}
+
 // main start
 // section1 start
 
 .section1{
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), 
     url(../images/banner_image.avif);
     background-size: cover;
     background-position: top;
@@ -136,19 +157,19 @@ header {
 
 // section2 start
 
-.section2 {
+.section2{
     min-height: 80vh;
     @include flex-box($gap: 30px);
     div{
         height: 440px;
-        width: 430px;
+        width: 435px;
         background-size: cover;
         background-position: center;
         @include flex-box();
         &:nth-child(1){
             background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
             url(../images/women_section_image.avif);
-            background-position: right;
+            background-position: 85% 50%;
         }
         &:nth-child(2){
             background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), 
@@ -170,7 +191,7 @@ header {
 // section3 start
 
 .section3{
-    height: 86.7vh;
+    height: 86.8vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(../images/section3_image.avif);
     background-size: cover;
@@ -206,31 +227,35 @@ header {
 .section4{
     min-height: 54vh;
     background-color: black;
-    @include flex-box($just: flex-start, $gap: 122px);
-    flex-wrap: no-wrap;
-    padding-inline: 310px;
-    img{
-        height: 200px;
-        object-fit: contain;
-        object-position: center;
-        
-        &:nth-child(1){
-            width: 148px;
-            
-        }
-        &:nth-child(2){
-            width: 110px;
-            margin-right: 26px
-        }
-        &:nth-child(3){
-            width: 92px;
-            margin-right: 32px;
-        }
-        &:nth-child(4){
-            width: 100px;
+    @include flex-box();
+    .grid-logo-container{
+        width: 65%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-auto-rows: 300px;
+        justify-items: center;
+        align-items: center;
+        img{
+            object-fit: contain;
+            object-position: center;
+            &:nth-child(1){
+                width: 145px;
+                height: 145px;
+            }
+            &:nth-child(2){
+                width: 110px;
+                height: 110px;
+            }
+            &:nth-child(3){
+                width: 93px;
+                height: 93px;
+            }
+            &:nth-child(4){
+                width: 100px;
+                height: 100px;
+            }
         }
     }
-
 }
 
 // section 5 start
@@ -433,8 +458,117 @@ header {
 
 //footer start
 
-footer {
-    height: 90vh;
+footer{
+    height: 94vh;
     background-color: black;
     color: white;
+    @include flex-box($dir: column);
+    form {
+        margin-top: 45px;
+        margin-bottom: 76px;
+        h1{
+            font-size: 40px;
+            text-align: center;
+            font-weight: 600;
+        }
+        .email-container{
+            margin-top: 20px;
+            @include flex-box($ali: flex-start ,$dir: column, $gap: 10px);
+            label{
+                font-size: 14px;
+                font-weight: bold;
+            }
+            input{
+                border: 1px solid white;
+                background-color: black;
+                color: white;
+                font-weight: 500;
+                font-family: "Poppins", sans-serif;
+                font-size: 18px;
+                border-radius: 0;
+                padding: 6px 12px;
+                outline: none;
+                width: 386px;
+            }
+        }
+        .checkbox-container {
+            @include flex-box($just: flex-start ,$gap: 10px);
+            margin-top: 22px;
+            input{
+                appearance: none;
+                border: 1px solid white;
+                width: 16px;
+                height: 16px;
+                cursor: pointer;
+                @include flex-box();
+                &:after {
+                    content: "\f00c";
+                    font-family: "Font Awesome 5 Free";
+                    font-weight: 900;
+                    color: white;
+                    font-size: 10px;
+                    display: none;
+                }
+                &:checked::after {
+                    display: unset;
+                }
+            }
+            label{
+                font-size: 18px;
+                font-weight: 600;
+                cursor: pointer;
+            }
+        }
+        button[type="submit"]{
+            margin-top: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            border: 1px solid white;
+            background-color: white;
+            width: 386px;
+            height: 42px;
+            font-family: "Poppins", sans-serif;
+            transition: .4s;
+            &:hover{
+                color: white;
+                background-color: transparent;
+                transition: .4s;
+            }
+        }
+    }
+    .address{
+        font-weight: 200;
+        @include flex-box($dir: column, $gap: 7px);
+        margin-bottom: 22px;
+        span{
+            font-size: 15px;
+            &:first-child{
+                cursor: pointer;
+            }
+        }
+    }
+    .social-media-logos{
+        @include flex-box($gap: 18px);
+        margin-bottom: 45px;
+        span{
+            cursor: pointer;
+            .fa-facebook-f{
+                font-size: 14px;
+            }
+            .fa-instagram{
+                font-size: 16px;
+            }
+            .fa-pinterest-p{
+                font-size: 16px;
+            }
+        }
+    }
+    span{
+        font-size: 14px;
+        font-weight: 200;
+        a{
+            color: white;
+        }
+    }
 }
