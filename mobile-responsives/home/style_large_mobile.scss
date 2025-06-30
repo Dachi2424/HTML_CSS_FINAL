@@ -11,7 +11,11 @@
 @media screen and (max-width: 768px)  {
   header{
     height: 140px;
+    nav{
+      height: 25%;
+    }
     .lower-side{
+      height: 75%;
       a{
         img{
           width: 77px;
@@ -31,7 +35,7 @@
 //section 1 and mobile-section1
 
   .section1{
-    height: 37.5vh;
+    height: 37.5svh;
     background-position: 50% 40%;
     background-attachment: scroll;
     display: block;
@@ -41,12 +45,14 @@
   }
 
   .mobile-section1{
+    height: 46svh;
     @include flex-box();
     }
 
 //section2 start
 
   .section2{
+    min-height: 80svh;
     gap: 0;
     flex-direction: column;
     div{
@@ -68,7 +74,7 @@
 //section3 start
   
   .section3{
-    height: 59.1vh;
+    height: 59.1svh;
     background-attachment: scroll;
     background-position: 10% center;
     div{
@@ -89,6 +95,7 @@
 //section4 start
 
   .section4{
+    min-height: 54svh;
     padding-top: 10px;
     padding-bottom: 30px;
     .grid-logo-container{
@@ -99,7 +106,7 @@
 //section5 start
 
   .section5{
-    min-height: 83vh;
+    min-height: 83svh;
     padding-top: 35px;
     h1{
       font-size: 32px;
@@ -119,7 +126,7 @@
 //section6 start
 
   .section6{
-    height: 32vh;
+    height: 32svh;
     a:first-child{
       font-size: 32px;
     }
@@ -135,6 +142,7 @@
   .section7{
     padding-bottom: 20px;
     .s7-image-container{
+      min-height: 70svh;
       width: 92%;
       gap: 10px;
       .s7-image{
@@ -161,5 +169,9 @@
     .darkening-btn{
       display: none;
     }
+  }
+
+  footer{
+    min-height: 94svh;
   }
 }
