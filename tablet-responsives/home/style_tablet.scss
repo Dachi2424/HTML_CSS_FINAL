@@ -1,0 +1,117 @@
+// responsive for tablet
+
+@media screen and (min-width: 768px) and (max-width: 970px) {
+  header{
+    height: 170px;
+    nav{
+      padding-inline: 50px;
+      .desktop-nav{
+        display: none;
+      }
+      .social-media-logos{
+        margin-left: 0;
+      }
+      .login-and-cart{
+        .login-text{
+          display: none;
+        }
+        .fa-bars{
+          display: unset;
+        }
+      }
+    }
+    .lower-side{
+      font-size: 14px;
+      a{
+        img{
+          width: 170px;
+        }
+      }
+    }
+  }
+
+  .floating-comment{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+
+  .section1{
+    height: 80vh;
+    background-position: 70% 50%;
+    .banner-info{
+      gap: 10px;
+      width: 350px;
+      h1{
+        font-size: 50px;
+        line-height: 63px;
+      }
+    }
+  }
+
+  .section2{
+    gap: 10px;
+    div{
+      &:nth-child(1){
+        background-position: 60% 50%;
+      }
+      &:nth-child(3){
+        background-position: 50% 50%;
+      }
+      a{
+        font-size: 44px;
+      }
+    }
+  }
+
+  .section3{
+    height: 80vh;
+    div{
+      width: 750px;
+      p:first-child{
+        font-size: 60px;
+      }
+      p:nth-child(2){
+        font-size: 60px;
+      }
+    }
+  }
+
+  .section4{
+    .grid-logo-container{
+      width: 85%;
+    }
+  }
+
+  .section5{
+    padding-top: 50px;
+    h1{
+      font-size: 50px;
+      margin-bottom: 80px;
+    }
+    .product-container{
+      gap: 10px;
+      .product-card:nth-child(5){
+        display: none;
+      }
+    }
+  }
+
+  .section6{
+    height: 48vh;
+    a:first-child{
+      font-size: 50px;
+    }
+    a:nth-child(2){
+      font-size: 32px;
+    }
+  }
+
+  .section7{
+    .s7-image-container{
+      width: 96%;
+      gap: 25px;
+    }
+  }
+}
+

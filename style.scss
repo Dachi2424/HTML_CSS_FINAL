@@ -45,7 +45,7 @@ header{
         .social-media-logos{
             margin-left: 26%;
             gap: 16px;
-            cursor: default;
+            
             & span:first-child{
                 font-size: 14px;
             }
@@ -57,11 +57,11 @@ header{
             margin-right: 30px;
             font-size: 14px;
             @include flex-box($gap: 20px);
-            span{
+            .login-text{
                 cursor: pointer;
                 font-weight: 200;
             }
-            span:hover{
+            .login-text:hover{
                 color: rgb(200, 200, 200);
             }
             img{
@@ -69,11 +69,11 @@ header{
                 cursor: pointer;
                 margin-bottom: 3px;
             }
-        }
-        .fa-bars{
-            font-size: 26px;
-            display: none;
-            cursor: pointer;
+            .fa-bars{
+                font-size: 26px;
+                display: none;
+                cursor: pointer;
+            }
         }
     }
     .lower-side{
@@ -229,10 +229,10 @@ header{
     background-color: black;
     @include flex-box();
     .grid-logo-container{
-        width: 65%;
+        width: 60%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-auto-rows: 300px;
+        grid-auto-rows: 150px;
         justify-items: center;
         align-items: center;
         img{
@@ -261,7 +261,7 @@ header{
 // section 5 start
 
 .section5{
-    height: 118vh;
+    min-height: 118vh;
     padding-top: 90px;
     h1{
         text-align: center;
@@ -379,7 +379,7 @@ header{
     .s7-image-container{
         padding-top: 10px;
         width: 98%;
-        min-height: 100vh;
+        min-height: 70vh;
         margin-inline: auto;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -459,7 +459,7 @@ header{
 //footer start
 
 footer{
-    height: 94vh;
+    min-height: 94vh;
     background-color: black;
     color: white;
     @include flex-box($dir: column);
@@ -570,5 +570,22 @@ footer{
         a{
             color: white;
         }
+    }
+}
+
+//small responsive adjustments
+
+@media screen and (max-width: 1070px){
+    header{
+        nav{
+            padding-left: 40px;
+            .login-and-cart{
+                margin-right: 0px;
+            }
+        }
+    }
+    footer{
+        padding-top: 10px;
+        padding-bottom: 40px; 
     }
 }

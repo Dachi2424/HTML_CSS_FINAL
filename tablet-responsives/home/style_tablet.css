@@ -1,0 +1,96 @@
+@media screen and (min-width: 768px) and (max-width: 970px) {
+  header {
+    height: 170px;
+  }
+  header nav {
+    padding-inline: 50px;
+  }
+  header nav .desktop-nav {
+    display: none;
+  }
+  header nav .social-media-logos {
+    margin-left: 0;
+  }
+  header nav .login-and-cart .login-text {
+    display: none;
+  }
+  header nav .login-and-cart .fa-bars {
+    display: unset;
+  }
+  header .lower-side {
+    font-size: 14px;
+  }
+  header .lower-side a img {
+    width: 170px;
+  }
+  .floating-comment {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  .section1 {
+    height: 80vh;
+    background-position: 70% 50%;
+  }
+  .section1 .banner-info {
+    gap: 10px;
+    width: 350px;
+  }
+  .section1 .banner-info h1 {
+    font-size: 50px;
+    line-height: 63px;
+  }
+  .section2 {
+    gap: 10px;
+  }
+  .section2 div:nth-child(1) {
+    background-position: 60% 50%;
+  }
+  .section2 div:nth-child(3) {
+    background-position: 50% 50%;
+  }
+  .section2 div a {
+    font-size: 44px;
+  }
+  .section3 {
+    height: 80vh;
+  }
+  .section3 div {
+    width: 750px;
+  }
+  .section3 div p:first-child {
+    font-size: 60px;
+  }
+  .section3 div p:nth-child(2) {
+    font-size: 60px;
+  }
+  .section4 .grid-logo-container {
+    width: 85%;
+  }
+  .section5 {
+    padding-top: 50px;
+  }
+  .section5 h1 {
+    font-size: 50px;
+    margin-bottom: 80px;
+  }
+  .section5 .product-container {
+    gap: 10px;
+  }
+  .section5 .product-container .product-card:nth-child(5) {
+    display: none;
+  }
+  .section6 {
+    height: 48vh;
+  }
+  .section6 a:first-child {
+    font-size: 50px;
+  }
+  .section6 a:nth-child(2) {
+    font-size: 32px;
+  }
+  .section7 .s7-image-container {
+    width: 96%;
+    gap: 25px;
+  }
+}/*# sourceMappingURL=style_tablet.css.map */
