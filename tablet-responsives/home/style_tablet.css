@@ -1,9 +1,9 @@
-@media screen and (min-width: 768px) and (max-width: 970px) {
+@media screen and (max-width: 970px) {
   header {
     height: 170px;
   }
   header nav {
-    padding-inline: 50px;
+    padding: 10px 10px 0 30px;
   }
   header nav .desktop-nav {
     display: none;
@@ -27,6 +27,8 @@
     width: 60px;
     height: 60px;
     border-radius: 50%;
+    bottom: 15px;
+    right: 15px;
   }
   .section1 {
     height: 80vh;
@@ -56,7 +58,7 @@
     height: 80vh;
   }
   .section3 div {
-    width: 750px;
+    width: 740px;
   }
   .section3 div p:first-child {
     font-size: 60px;
