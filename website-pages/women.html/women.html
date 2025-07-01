@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./women.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul class="sidebar">
+        <li><a href="#"><i onclick=closeSidebar() class="fa-solid fa-xmark"></i></a></li>
+        <li><span class="login-text">Log In</span></li>
+        <li><a href="../shop_all/shopall.html">Shop All</a></li>
+        <li><a href="#">Woman</a></li>
+        <li><a href="../men/men.html">Men</a></li>
+        <li><a href="../sale/sale.html">Sale</a></li>
+        <li><a href="../about/about.html">About</a></li>
+        <li><a href="../store_policies/storepolicies.html">Store Policies</a></li>
+        <li><a href="../contact/contact.html">Contact</a></li>
+      </ul>
+      <ul class="desktop-nav">
+        <li><a href="../shop_all/shopall.html">Shop All</a></li>
+        <li><a href="#">Woman</a></li>
+        <li><a href="../men/men.html">Men</a></li>
+        <li><a href="../sale/sale.html">Sale</a></li>
+        <li><a href="../about/about.html">About</a></li>
+        <li><a href="../store_policies/storepolicies.html">Store Policies</a></li>
+        <li><a href="../contact/contact.html">Contact</a></li>
+      </ul>
+      <ul class="social-media-logos">
+        <span><i class="fa-brands fa-facebook-f"></i></span>
+        <span><i class="fa-brands fa-instagram"></i></span>
+        <span><i class="fa-brands fa-pinterest-p"></i></span>
+      </ul>
+      <div class="login-and-cart">
+        <span class="login-text">Log In</span>
+        <img src="../../additional-images/cart.png" alt="cart">
+        <i onclick=showSidebar() class="fa-solid fa-bars"></i>
+      </div>
+
+    </nav>
+    <div class="lower-side">
+      <a href="../../index.html"><img src="../../additional-images/logo.png" alt="logo"></a>
+      <span>Ideal weather,superb clothing</span>
+    </div>
+  </header>
+  <div class="floating-comment">
+    <img src="../../additional-images/comment.png" alt="floating_comment">
+  </div>
+  <main>
+
+  </main>
+  <footer>
+    <form>
+      <h1>Subscribe Form</h1>
+      <div class="email-container">
+        <label for="email">Email *</label>
+        <input type="email" id="email" required>
+      </div>
+      <div class="checkbox-container">
+        <input type="checkbox" id="check" required>
+        <label for="check">Yes, subscribe me to your newsletter. *</label>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+    <div class="address">
+      <span>info@my-domain.com</span>
+      <span>123-456-7890</span>
+      <span>500 Terry Francine Street</span>
+      <span>San Francisco, CA 94158</span>
+    </div>
+    <ul class="social-media-logos">
+      <span><i class="fa-brands fa-facebook-f"></i></span>
+      <span><i class="fa-brands fa-instagram"></i></span>
+      <span><i class="fa-brands fa-pinterest-p"></i></span>
+    </ul>
+    <span>&#169;2035 by 30°F. Powered and secured by <a
+        href="https://manage.wix.com/account/websites?referralAdditionalInfo=Route">Wix</a></span>
+  </footer>
+  <script>
+    function showSidebar() {
+      const sidebar = document.querySelector('.sidebar');
+      sidebar.style.display = "flex";
+    }
+    function closeSidebar() {
+      const sidebar = document.querySelector('.sidebar');
+      sidebar.style.display = "none";
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+header {
+  width: 100%;
+  height: 190px;
+  background-color: black;
+  color: white;
+}
+header nav {
+  padding-inline: 80px 60px;
+  height: 20%;
+  background-color: #191919;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+}
+header nav .sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 9999;
+  background-color: black;
+  text-align: center;
+  display: none;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 20px;
+}
+header nav .sidebar li {
+  width: 90%;
+}
+header nav .sidebar li a {
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+}
+header nav .sidebar li a .fa-xmark {
+  font-size: 30px;
+  justify-self: flex-start;
+  align-self: flex-end;
+  position: absolute;
+  top: 8px;
+  right: 10px;
+}
+header nav .sidebar li .login-text {
+  font-size: 15px;
+  font-weight: 200;
+}
+header nav .sidebar li .login-text:hover {
+  color: rgb(200, 200, 200);
+}
+header nav .sidebar li:nth-child(2) {
+  margin-top: 30px;
+  align-self: flex-end;
+}
+header nav .sidebar li:nth-child(8) {
+  color: #ddfa61;
+}
+header nav ul {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+header nav .social-media-logos {
+  margin-left: 26%;
+  gap: 16px;
+}
+header nav .social-media-logos span:first-child {
+  font-size: 14px;
+}
+header nav .social-media-logos span {
+  cursor: pointer;
+}
+header nav .login-and-cart {
+  margin-right: 30px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+}
+header nav .login-and-cart .login-text {
+  cursor: pointer;
+  font-weight: 200;
+}
+header nav .login-and-cart .login-text:hover {
+  color: rgb(200, 200, 200);
+}
+header nav .login-and-cart img {
+  width: 26px;
+  cursor: pointer;
+  margin-bottom: 3px;
+}
+header nav .login-and-cart .fa-bars {
+  font-size: 26px;
+  display: none;
+  cursor: pointer;
+}
+header .lower-side {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 200;
+}
+header .lower-side a img {
+  width: 185px;
+  cursor: pointer;
+}
+
+.floating-comment {
+  width: 64px;
+  height: 64px;
+  border-radius: 20px;
+  background-color: black;
+  position: fixed;
+  z-index: 999;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+}
+.floating-comment img {
+  width: 50%;
+  height: 50%;
+}
+
+footer {
+  min-height: 94vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0;
+}
+footer form {
+  margin-top: 45px;
+  margin-bottom: 76px;
+}
+footer form h1 {
+  font-size: 40px;
+  text-align: center;
+  font-weight: 600;
+}
+footer form .email-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+footer form .email-container label {
+  font-size: 14px;
+  font-weight: bold;
+}
+footer form .email-container input {
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  border-radius: 0;
+  padding: 6px 12px;
+  outline: none;
+  width: 386px;
+}
+footer form .checkbox-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 22px;
+}
+footer form .checkbox-container input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 1px solid white;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+}
+footer form .checkbox-container input:after {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: white;
+  font-size: 10px;
+  display: none;
+}
+footer form .checkbox-container input:checked::after {
+  display: unset;
+}
+footer form .checkbox-container label {
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+footer form button[type=submit] {
+  margin-top: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid white;
+  background-color: white;
+  width: 386px;
+  height: 42px;
+  font-family: "Poppins", sans-serif;
+  transition: 0.4s;
+}
+footer form button[type=submit]:hover {
+  color: white;
+  background-color: transparent;
+  transition: 0.4s;
+}
+footer .address {
+  font-weight: 200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 7px;
+  margin-bottom: 22px;
+}
+footer .address span {
+  font-size: 15px;
+}
+footer .address span:first-child {
+  cursor: pointer;
+}
+footer .social-media-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 18px;
+  margin-bottom: 45px;
+}
+footer .social-media-logos span {
+  cursor: pointer;
+}
+footer .social-media-logos span .fa-facebook-f {
+  font-size: 14px;
+}
+footer .social-media-logos span .fa-instagram {
+  font-size: 16px;
+}
+footer .social-media-logos span .fa-pinterest-p {
+  font-size: 16px;
+}
+footer span {
+  font-size: 14px;
+  font-weight: 200;
+}
+footer span a {
+  color: white;
+}
+
+@media screen and (max-width: 1070px) {
+  header nav {
+    padding-left: 40px;
+  }
+  header nav .login-and-cart {
+    margin-right: 0px;
+  }
+  footer {
+    padding-top: 10px;
+    padding-bottom: 40px;
+  }
+}/*# sourceMappingURL=storepolicies.css.map */

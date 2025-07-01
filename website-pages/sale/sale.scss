@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@mixin flex-box($just: center, $ali: center, $dir: row, $gap: 0){
+  display: flex;
+  justify-content: $just;
+  align-items: $ali;
+  flex-direction: $dir;
+  gap: $gap;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+header{
+  width: 100%;
+  height: 190px;
+  background-color: black;
+  color: white;
+  nav {
+    padding-inline: 80px 60px;
+    height: 20%;
+    background-color: #191919;
+    @include flex-box($just: space-between);
+    .sidebar{
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100vh;
+      width: 100%;
+      z-index: 9999;
+      background-color: black;
+      text-align: center;
+      display: none;
+      justify-content: flex-start;
+      flex-direction: column;
+      gap: 20px;
+      font-size: 20px;
+      li{
+        width: 90%;
+        a{
+          width: 100%;
+          font-size: 20px;
+          font-weight: bold;
+          .fa-xmark{
+            font-size: 30px;
+            justify-self: flex-start;
+            align-self: flex-end;
+            position: absolute;
+            top: 8px;
+            right: 10px;
+          }
+        }
+        .login-text{
+          font-size: 15px;
+          font-weight: 200;
+          &:hover{
+            color: rgb(200, 200, 200);
+          }
+        }
+      }
+      li:nth-child(2){
+        margin-top: 30px;
+        align-self: flex-end;
+      }
+      li:nth-child(6){
+        color: #ddfa61;
+      }
+    }
+    ul{
+      cursor: pointer;
+      list-style: none;
+      @include flex-box($gap: 20px);
+      li{
+        a{
+          text-decoration: none;
+          color: white;
+          font-size: 14px;
+        }
+      }
+    }
+    .social-media-logos{
+      margin-left: 26%;
+      gap: 16px;
+      & span:first-child{
+        font-size: 14px;
+      }
+      span{
+        cursor: pointer;
+      }
+    }
+    .login-and-cart{
+      margin-right: 30px;
+      font-size: 14px;
+      @include flex-box($gap: 20px);
+      .login-text{
+        cursor: pointer;
+        font-weight: 200;
+      }
+      .login-text:hover{
+        color: rgb(200, 200, 200);
+      }
+      img{
+        width: 26px;
+        cursor: pointer;
+        margin-bottom: 3px;
+      }
+      .fa-bars{
+        font-size: 26px;
+        display: none;
+        cursor: pointer;
+      }
+    }
+  }
+  .lower-side{
+    width: 100%;
+    height: 80%;
+    @include flex-box($dir: column, $gap: 10px);
+    font-size: 15px;
+    font-weight: 200;
+    a{
+      img{
+        width: 185px;
+        cursor: pointer;
+      }    
+    }
+  }
+}
+
+//header end
+//floating-comment:
+
+.floating-comment{
+  width: 64px;
+  height: 64px;
+  border-radius: 20px;
+  background-color: black;
+  position: fixed;
+  z-index: 999;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  @include flex-box();
+  img{
+    width: 50%;
+    height: 50%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+//footer start
+
+footer{
+  min-height: 94vh;
+  background-color: black;
+  color: white;
+  @include flex-box($dir: column);
+  form {
+    margin-top: 45px;
+    margin-bottom: 76px;
+    h1{
+      font-size: 40px;
+      text-align: center;
+      font-weight: 600;
+    }
+    .email-container{
+      margin-top: 20px;
+      @include flex-box($ali: flex-start ,$dir: column, $gap: 10px);
+      label{
+        font-size: 14px;
+        font-weight: bold;
+      }
+      input{
+        border: 1px solid white;
+        background-color: black;
+        color: white;
+        font-weight: 500;
+        font-family: "Poppins", sans-serif;
+        font-size: 18px;
+        border-radius: 0;
+        padding: 6px 12px;
+        outline: none;
+        width: 386px;
+      }
+    }
+    .checkbox-container {
+      @include flex-box($just: flex-start ,$gap: 10px);
+      margin-top: 22px;
+      input{
+        appearance: none;
+        border: 1px solid white;
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+        @include flex-box();
+        &:after {
+          content: "\f00c";
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          color: white;
+          font-size: 10px;
+          display: none;
+        }
+        &:checked::after {
+          display: unset;
+        }
+      }
+      label{
+        font-size: 18px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+    }
+    button[type="submit"]{
+      margin-top: 25px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 600;
+      border: 1px solid white;
+      background-color: white;
+      width: 386px;
+      height: 42px;
+      font-family: "Poppins", sans-serif;
+      transition: .4s;
+      &:hover{
+        color: white;
+        background-color: transparent;
+        transition: .4s;
+      }
+    }
+  }
+  .address{
+    font-weight: 200;
+    @include flex-box($dir: column, $gap: 7px);
+    margin-bottom: 22px;
+    span{
+      font-size: 15px;
+      &:first-child{
+        cursor: pointer;
+      }
+    }
+  }
+  .social-media-logos{
+    @include flex-box($gap: 18px);
+    margin-bottom: 45px;
+    span{
+      cursor: pointer;
+      .fa-facebook-f{
+        font-size: 14px;
+      }
+      .fa-instagram{
+        font-size: 16px;
+      }
+      .fa-pinterest-p{
+        font-size: 16px;
+      }
+    }
+  }
+  span{
+    font-size: 14px;
+    font-weight: 200;
+    a{
+      color: white;
+    }
+  }
+}
+
+//small responsive adjustments
+
+@media screen and (max-width: 1070px){
+  header{
+    nav{
+      padding-left: 40px;
+      .login-and-cart{
+        margin-right: 0px;
+      }
+    }
+  }
+  footer{
+    padding-top: 10px;
+    padding-bottom: 40px; 
+  }
+}
