@@ -95,4 +95,7 @@
     width: 96%;
     gap: 25px;
   }
+  .section7 .s7-image-container .s7-image a {
+    font-size: 15px;
+  }
 }/*# sourceMappingURL=style_tablet.css.map */

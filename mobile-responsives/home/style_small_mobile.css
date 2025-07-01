@@ -5,6 +5,9 @@
   .section5 .product-container .product-card:nth-child(3) {
     display: none;
   }
+  .section7 .s7-image-container .s7-image a {
+    font-size: 8px;
+  }
   footer {
     min-height: 80svh;
     padding-bottom: 40px;
