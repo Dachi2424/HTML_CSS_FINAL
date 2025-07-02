@@ -1,0 +1,24 @@
+@media screen and (max-width: 768px) {
+  header {
+    height: 140px;
+  }
+  header nav {
+    height: 25%;
+  }
+  header .lower-side {
+    height: 75%;
+  }
+  header .lower-side a img {
+    width: 77px;
+  }
+  .floating-comment {
+    width: 50px;
+    height: 50px;
+    bottom: 12px;
+    right: 12px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
+  }
+  footer {
+    min-height: 94svh;
+  }
+}/*# sourceMappingURL=large_mobile_store_policies.css.map */

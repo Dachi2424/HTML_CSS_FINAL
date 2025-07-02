@@ -1,0 +1,33 @@
+@media screen and (max-width: 970px) {
+  header {
+    height: 170px;
+  }
+  header nav {
+    padding: 10px 10px 0 30px;
+  }
+  header nav .desktop-nav {
+    display: none;
+  }
+  header nav .social-media-logos {
+    margin-left: 0;
+  }
+  header nav .login-and-cart .login-text {
+    display: none;
+  }
+  header nav .login-and-cart .fa-bars {
+    display: unset;
+  }
+  header .lower-side {
+    font-size: 14px;
+  }
+  header .lower-side a img {
+    width: 170px;
+  }
+  .floating-comment {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    bottom: 15px;
+    right: 15px;
+  }
+}/*# sourceMappingURL=tablet_store_policies.css.map */
