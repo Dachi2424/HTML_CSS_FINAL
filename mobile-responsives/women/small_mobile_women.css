@@ -1,0 +1,52 @@
+@media screen and (max-width: 400px) {
+  footer {
+    min-height: 80svh;
+    padding-bottom: 40px;
+    padding-top: 0;
+  }
+  footer form {
+    margin-bottom: 10px;
+  }
+  footer form h1 {
+    font-size: 30px;
+  }
+  footer form .email-container label {
+    margin-left: 10px;
+  }
+  footer form .email-container input {
+    width: 340px;
+    margin-left: 10px;
+  }
+  footer form .checkbox-container input {
+    margin-left: 10px;
+  }
+  footer form button[type=submit] {
+    width: 340px;
+    margin-left: 10px;
+  }
+  footer .address span {
+    font-size: 14px;
+  }
+  footer .social-media-logos {
+    margin-bottom: 20px;
+  }
+  footer span {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 350px) {
+  footer form .email-container input {
+    width: 300px;
+  }
+  footer form button[type=submit] {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 320px) {
+  footer form .email-container input {
+    width: 270px;
+  }
+  footer form button[type=submit] {
+    width: 270px;
+  }
+}/*# sourceMappingURL=small_mobile_women.css.map */

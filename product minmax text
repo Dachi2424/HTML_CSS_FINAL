@@ -1,0 +1,4 @@
+desktop: minmax(300px, 35vw)
+tablet: minmax(280px, 50vw)
+large-phone: minmax(280px, 70vw)
+small-phone: minmax(220px, 140vw)
