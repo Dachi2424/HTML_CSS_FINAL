@@ -24,7 +24,7 @@
   section .product-grid-container {
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: minmax(280px, 70vw);
-    row-gap: 40px;
+    row-gap: 30px;
   }
   section .product-grid-container .product-card .im-product-text {
     margin-top: 5px;

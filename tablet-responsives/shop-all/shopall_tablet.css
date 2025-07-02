@@ -38,5 +38,7 @@
   }
   section .product-grid-container {
     grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(280px, 50vw);
+    gap: 20px;
   }
 }/*# sourceMappingURL=shopall_tablet.css.map */

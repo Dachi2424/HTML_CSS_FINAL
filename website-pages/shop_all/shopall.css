@@ -195,9 +195,9 @@ section .product-quantity {
 section .product-grid-container {
   margin-top: 20px;
   display: grid;
-  grid-auto-rows: 540px;
+  grid-auto-rows: minmax(300px, 35vw);
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 30px;
 }
 section .product-grid-container .product-card {
   position: relative;
