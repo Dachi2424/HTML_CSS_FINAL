@@ -44,6 +44,9 @@ header nav .sidebar {
 header nav .sidebar li {
   width: 90%;
 }
+header nav .sidebar li:nth-child(6) a {
+  color: #ddfa61;
+}
 header nav .sidebar li a {
   width: 100%;
   font-size: 20px;
