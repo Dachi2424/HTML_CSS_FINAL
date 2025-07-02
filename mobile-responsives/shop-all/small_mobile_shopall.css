@@ -1,12 +1,22 @@
 @media screen and (max-width: 400px) {
-  .section3 div {
-    width: 280px;
+  section .directory {
+    padding-left: 20px;
+    margin-bottom: 24px;
   }
-  .section5 .product-container .product-card:nth-child(3) {
-    display: none;
+  section .big-text {
+    font-size: 32px;
+    margin-bottom: 20px;
   }
-  .section7 .s7-image-container .s7-image a {
-    font-size: 8px;
+  section .product-quantity {
+    padding-left: 20px;
+  }
+  section .product-grid-container {
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(220px, 140vw);
+    row-gap: 50px;
+  }
+  section .product-grid-container .product-card img {
+    height: 84%;
   }
   footer {
     min-height: 80svh;
@@ -58,4 +68,4 @@
   footer form button[type=submit] {
     width: 270px;
   }
-}/*# sourceMappingURL=style_small_mobile.css.map */
+}/*# sourceMappingURL=small_mobile_shopall.css.map */

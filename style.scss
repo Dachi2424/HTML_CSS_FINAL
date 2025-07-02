@@ -576,8 +576,8 @@ footer{
             input{
                 appearance: none;
                 border: 1px solid white;
-                width: 16px;
-                height: 16px;
+                width: 18px;
+                height: 14px;
                 cursor: pointer;
                 @include flex-box();
                 &:after {

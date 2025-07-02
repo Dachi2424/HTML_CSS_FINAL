@@ -614,8 +614,8 @@ footer form .checkbox-container input {
      -moz-appearance: none;
           appearance: none;
   border: 1px solid white;
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 14px;
   cursor: pointer;
   display: flex;
   justify-content: center;

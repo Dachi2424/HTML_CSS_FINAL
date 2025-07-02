@@ -1,0 +1,44 @@
+// responsive for large mobile
+
+@media screen and (max-width: 768px) {
+  header{
+    height: 140px;
+    nav{
+      height: 25%;
+    }
+    .lower-side{
+      height: 75%;
+      a{
+        img{
+          width: 77px;
+        }
+      }
+    }
+  }
+  .floating-comment{
+    width: 50px;
+    height: 50px;
+    bottom: 12px;
+    right: 12px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  section{
+    min-height: 220svh;
+    .product-grid-container{
+      grid-template-columns: 1fr 1fr;
+      grid-auto-rows: minmax(280px, 70vw);
+      row-gap: 40px;
+      .product-card{
+        .im-product-text{
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+
+  footer{
+    min-height: 94svh;
+  }
+}
+

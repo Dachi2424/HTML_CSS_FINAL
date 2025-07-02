@@ -1,0 +1,35 @@
+@media screen and (max-width: 768px) {
+  header {
+    height: 140px;
+  }
+  header nav {
+    height: 25%;
+  }
+  header .lower-side {
+    height: 75%;
+  }
+  header .lower-side a img {
+    width: 77px;
+  }
+  .floating-comment {
+    width: 50px;
+    height: 50px;
+    bottom: 12px;
+    right: 12px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
+  }
+  section {
+    min-height: 220svh;
+  }
+  section .product-grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(280px, 70vw);
+    row-gap: 40px;
+  }
+  section .product-grid-container .product-card .im-product-text {
+    margin-top: 5px;
+  }
+  footer {
+    min-height: 94svh;
+  }
+}/*# sourceMappingURL=large_mobile_shopall.css.map */

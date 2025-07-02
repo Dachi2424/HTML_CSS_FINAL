@@ -44,6 +44,9 @@ header nav .sidebar {
 header nav .sidebar li {
   width: 90%;
 }
+header nav .sidebar li:nth-child(3) a {
+  color: #ddfa61;
+}
 header nav .sidebar li a {
   width: 100%;
   font-size: 20px;
@@ -67,9 +70,6 @@ header nav .sidebar li .login-text:hover {
 header nav .sidebar li:nth-child(2) {
   margin-top: 30px;
   align-self: flex-end;
-}
-header nav .sidebar li:nth-child(3) {
-  color: #ddfa61;
 }
 header nav ul {
   cursor: pointer;
@@ -337,8 +337,8 @@ footer form .checkbox-container input {
      -moz-appearance: none;
           appearance: none;
   border: 1px solid white;
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 14px;
   cursor: pointer;
   display: flex;
   justify-content: center;
