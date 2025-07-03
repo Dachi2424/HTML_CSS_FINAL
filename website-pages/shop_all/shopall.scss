@@ -191,7 +191,7 @@ section {
     display: grid;
     grid-auto-rows: minmax(300px, 35vw);
     grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+    gap: 20px;
     .product-card{
       position: relative;
       @include flex-box($just: flex-start, $dir: column, $gap: 5px);

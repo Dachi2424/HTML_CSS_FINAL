@@ -198,7 +198,7 @@ section .product-grid-container {
   display: grid;
   grid-auto-rows: minmax(300px, 35vw);
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  gap: 20px;
 }
 section .product-grid-container .product-card {
   position: relative;
