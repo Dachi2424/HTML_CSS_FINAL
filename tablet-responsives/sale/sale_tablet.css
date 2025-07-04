@@ -30,4 +30,15 @@
     bottom: 15px;
     right: 15px;
   }
+  section .big-text {
+    font-size: 50px;
+  }
+  section .product-quantity {
+    font-size: 14px;
+  }
+  section .product-grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(280px, 50vw);
+    gap: 20px;
+  }
 }/*# sourceMappingURL=sale_tablet.css.map */

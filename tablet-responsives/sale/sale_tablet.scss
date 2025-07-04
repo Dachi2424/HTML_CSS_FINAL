@@ -37,4 +37,18 @@
     bottom: 15px;
     right: 15px;
   }
+
+  section{
+    .big-text{
+      font-size: 50px;
+    }
+    .product-quantity{
+      font-size: 14px;
+    }
+    .product-grid-container{
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: minmax(280px, 50vw);
+      gap: 20px;
+    }
+  }
 }

@@ -201,7 +201,9 @@ section .product-grid-container {
   display: grid;
   grid-auto-rows: minmax(300px, 35vw);
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 30px;
 }
 section .product-grid-container .product-card {
   position: relative;

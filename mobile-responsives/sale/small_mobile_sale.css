@@ -1,4 +1,23 @@
 @media screen and (max-width: 400px) {
+  section .directory {
+    padding-left: 20px;
+    margin-bottom: 24px;
+  }
+  section .big-text {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  section .product-quantity {
+    padding-left: 20px;
+  }
+  section .product-grid-container {
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(220px, 140vw);
+    row-gap: 10px;
+  }
+  section .product-grid-container .product-card img {
+    height: 84%;
+  }
   footer {
     min-height: 80svh;
     padding-bottom: 40px;
