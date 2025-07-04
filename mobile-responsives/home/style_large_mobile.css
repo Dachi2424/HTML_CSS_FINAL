@@ -141,4 +141,32 @@
   footer {
     min-height: 94svh;
   }
+}
+@media screen and (max-height: 400px) and (orientation: landscape) {
+  .section1 {
+    height: 80svh;
+    background-position: center;
+  }
+  .section1 .banner-info {
+    display: none;
+  }
+  .mobile-section1 {
+    height: 80svh;
+  }
+  .section3 {
+    height: 85svh;
+  }
+  .section5 {
+    padding-bottom: 20px;
+  }
+  .section5 h1 {
+    margin-bottom: 20px;
+  }
+  .section6 {
+    height: 60svh;
+  }
+  footer form {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
 }/*# sourceMappingURL=style_large_mobile.css.map */
