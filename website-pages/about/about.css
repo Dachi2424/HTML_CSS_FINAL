@@ -162,6 +162,42 @@ header .lower-side a img {
   height: 50%;
 }
 
+.section1 {
+  height: 110vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+}
+.section1 .left-side {
+  height: 100%;
+  width: 50%;
+  padding: 160px 150px 0 150px;
+}
+.section1 .left-side h1 {
+  font-size: 40px;
+  width: 100px;
+  line-height: 50px;
+  margin-bottom: 30px;
+}
+.section1 .left-side p {
+  font-size: 15px;
+  font-weight: 200;
+  line-height: 28px;
+}
+.section1 .left-side .first-p {
+  margin-bottom: 30px;
+}
+.section1 .right-side {
+  height: 100%;
+  width: 50%;
+  background-image: url(../../images/about_page_image.avif);
+  background-attachment: fixed;
+  background-size: 85%;
+  background-position-x: 580px;
+}
+
 footer {
   min-height: 94vh;
   background-color: black;

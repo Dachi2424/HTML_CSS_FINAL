@@ -158,13 +158,37 @@ header{
   }
 }
 
-
-
-
-
-
-
-
+.section1{
+  height: 110vh;
+  @include flex-box();
+  .left-side{
+    height: 100%;
+    width: 50%;
+    padding: 160px 150px 0 150px;
+    h1{
+      font-size: 40px;
+      width: 100px;
+      line-height: 50px;
+      margin-bottom: 30px;
+    }
+    p{
+      font-size: 15px;
+      font-weight: 200;
+      line-height: 28px;
+    }
+    .first-p{
+      margin-bottom: 30px;
+    }
+  }
+  .right-side{
+    height: 100%;
+    width: 50%;
+    background-image: url(../../images/about_page_image.avif);
+    background-attachment: fixed;
+    background-size: 85%;
+    background-position-x: 580px;
+  }
+}
 
 
 
