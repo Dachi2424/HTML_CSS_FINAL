@@ -32,4 +32,17 @@
   footer {
     min-height: 94svh;
   }
+}
+@media screen and (max-height: 400px) and (orientation: landscape) {
+  section .product-grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, 50vw);
+  }
+  section .big-text {
+    margin-bottom: 30px;
+  }
+  footer form {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
 }/*# sourceMappingURL=large_mobile_women.css.map */
