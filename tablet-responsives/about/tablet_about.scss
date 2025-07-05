@@ -37,4 +37,39 @@
     bottom: 15px;
     right: 15px;
   }
+
+  .section1{
+    .left-side{
+      padding: 40px 40px 0 40px;
+    }
+  }
+
+  .section2{
+    padding: 60px 50px 30px 50px;
+    h1{
+      font-size: 50px;
+      margin-bottom: 70px;
+    }
+    .grid-container{
+      grid-auto-rows: minmax(100px, 26vw);
+      row-gap: 0;
+      div{
+        span{
+          font-size: 18px;
+        }
+        p{
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and  (max-width: 865px) {
+  .section2{
+    .grid-container{
+      grid-auto-rows: minmax(100px, 34vw);
+    }
+  }
 }

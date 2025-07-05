@@ -1,4 +1,19 @@
 @media screen and (max-width: 400px) {
+  .section1 .left-side h1 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .section2 h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  .section2 .grid-container {
+    grid-auto-rows: 270px;
+  }
+  .section2 .grid-container div p {
+    margin-top: 10px;
+    font-size: 14px;
+  }
   footer {
     min-height: 80svh;
     padding-bottom: 40px;
@@ -35,6 +50,9 @@
   }
 }
 @media screen and (max-width: 350px) {
+  .section2 .grid-container {
+    grid-auto-rows: 290px;
+  }
   footer form .email-container input {
     width: 300px;
   }
@@ -43,6 +61,9 @@
   }
 }
 @media screen and (max-width: 320px) {
+  .section2 .grid-container {
+    grid-auto-rows: 320px;
+  }
   footer form .email-container input {
     width: 270px;
   }
