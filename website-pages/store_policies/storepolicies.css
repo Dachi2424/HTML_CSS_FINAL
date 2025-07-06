@@ -162,6 +162,18 @@ header .lower-side a img {
   height: 50%;
 }
 
+main {
+  animation: fadeOut 0.7s ease-out forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 section {
   padding-top: 90px;
 }

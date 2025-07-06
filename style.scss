@@ -18,7 +18,6 @@
 body{
     font-family: "Poppins", sans-serif;
     font-weight: 300;
-    
 }
 
 header{
@@ -155,6 +154,16 @@ header{
 }
 
 // main start
+
+main{
+    animation: fadeOut .7s ease-out forwards;
+}
+
+@keyframes fadeOut {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
 // section1 start
 
 .section1{

@@ -158,8 +158,21 @@ header{
   }
 }
 
+main{
+    animation: fadeOut .7s ease-out forwards;
+}
 
+@keyframes fadeOut {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
 
+section{
+  .header{
+    font-size: 88px;
+    text-align: center;
+  }
+}
 
 
 
