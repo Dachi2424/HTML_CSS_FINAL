@@ -78,20 +78,25 @@
 @media screen and (max-height: 400px) and (orientation: landscape) {
   .section1 {
     overflow: hidden;
-    height: 180svh;
+    height: 190svh;
     flex-direction: row;
   }
   .section1 .left-side {
     padding-top: 20px;
     width: 50%;
     height: 100%;
+    padding: 20px 10px 0px 10px;
   }
   .section1 .left-side h1 {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 22px;
+    line-height: 28px;
   }
   .section1 .left-side p {
-    font-size: 14px;
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .section1 .left-side .first-p {
+    margin-bottom: 18px;
   }
   .section1 .right-side {
     width: 50%;
