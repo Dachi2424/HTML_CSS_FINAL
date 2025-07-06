@@ -37,4 +37,36 @@
     bottom: 15px;
     right: 15px;
   }
+
+  section{
+    padding-top: 70px;
+    .header{
+      font-size: 50px;
+      margin-bottom: 50px;
+    }
+    .text-container{
+      padding: 0px 20% 100px 20%;
+      .subtitle{
+        font-size: 44px;
+      }
+      .margin-class{
+        margin-top: 70px;
+      }
+      .mini-subtitle{
+        font-size: 14px;
+        margin-top: 15px;
+        margin-bottom: 25px;
+      }
+      .text{
+        font-size: 14px;
+        line-height: 25px;
+      }
+      .first{
+        margin-bottom: 25px;
+      }
+      .second{
+        margin-bottom: 50px;
+      }
+    }
+  }
 }

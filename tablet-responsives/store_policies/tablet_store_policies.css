@@ -30,4 +30,35 @@
     bottom: 15px;
     right: 15px;
   }
+  section {
+    padding-top: 70px;
+  }
+  section .header {
+    font-size: 50px;
+    margin-bottom: 50px;
+  }
+  section .text-container {
+    padding: 0px 20% 100px 20%;
+  }
+  section .text-container .subtitle {
+    font-size: 44px;
+  }
+  section .text-container .margin-class {
+    margin-top: 70px;
+  }
+  section .text-container .mini-subtitle {
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+  section .text-container .text {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  section .text-container .first {
+    margin-bottom: 25px;
+  }
+  section .text-container .second {
+    margin-bottom: 50px;
+  }
 }/*# sourceMappingURL=tablet_store_policies.css.map */

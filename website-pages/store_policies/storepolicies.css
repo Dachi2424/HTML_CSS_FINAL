@@ -162,6 +162,44 @@ header .lower-side a img {
   height: 50%;
 }
 
+section {
+  padding-top: 90px;
+}
+section .header {
+  text-align: center;
+  font-size: 88px;
+  margin-bottom: 70px;
+}
+section .text-container {
+  padding: 0px 25% 105px 25%;
+  width: 100%;
+  text-align: center;
+}
+section .text-container .subtitle {
+  font-size: 72px;
+  font-weight: 600;
+}
+section .text-container .margin-class {
+  margin-top: 85px;
+}
+section .text-container .mini-subtitle {
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+section .text-container .text {
+  font-size: 15px;
+  font-weight: 200;
+  line-height: 28px;
+}
+section .text-container .first {
+  margin-bottom: 30px;
+}
+section .text-container .second {
+  margin-bottom: 60px;
+}
+
 footer {
   min-height: 94vh;
   background-color: black;

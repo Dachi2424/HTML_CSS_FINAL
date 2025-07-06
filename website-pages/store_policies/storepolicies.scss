@@ -158,9 +158,43 @@ header{
   }
 }
 
-
-
-
+section{
+  padding-top: 90px;
+  .header{
+    text-align: center;
+    font-size: 88px;
+    margin-bottom: 70px;
+  }
+  .text-container{
+    padding: 0px 25% 105px 25%;
+    width: 100%;
+    text-align: center;
+    .subtitle{
+      font-size: 72px;
+      font-weight: 600;
+    }
+    .margin-class{
+      margin-top: 85px;
+    }
+    .mini-subtitle{
+      font-size: 15px;
+      font-weight: 500;
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+    .text{
+      font-size: 15px;
+      font-weight: 200;
+      line-height: 28px;
+    }
+    .first{
+      margin-bottom: 30px;
+    }
+    .second{
+      margin-bottom: 60px;
+    }
+  }
+}
 
 
 

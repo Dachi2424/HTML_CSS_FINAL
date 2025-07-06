@@ -23,7 +23,50 @@
     box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
   }
 
+  section{
+    padding-top: 60px;
+    .header{
+      font-size: 40px;
+      margin-bottom: 40px;
+    }
+    .text-container{
+      padding: 0px 12% 70px 12%;
+      .subtitle{
+        font-size: 34px;
+      }
+      .mini-subtitle{
+        margin-bottom: 20px;
+      }
+    }
+  }
+
   footer{
     min-height: 94svh;
+  }
+}
+
+
+@media screen and (max-height: 400px) and (orientation: landscape) {
+  section{
+    padding-top: 40px;
+    .header{
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+    .text-container{
+      .subtitle{
+        font-size: 28px;
+      }
+      .mini-subtitle{
+        margin-bottom: 10px;
+        margin-top: 25px;
+      }
+      .margin-class{
+        margin-top: 30px;
+      }
+      .second{
+        margin-bottom: 30px;
+      }
+    }
   }
 }
