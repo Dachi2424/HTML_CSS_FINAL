@@ -174,9 +174,135 @@ main {
     opacity: 1;
   }
 }
-section .header {
-  font-size: 88px;
+section {
+  padding-top: 110px;
+  padding-bottom: 105px;
+}
+section .upper-container {
+  margin-inline: auto;
+  width: 59%;
   text-align: center;
+  margin-bottom: 80px;
+}
+section .upper-container h1 {
+  font-size: 88px;
+  margin-bottom: 10px;
+}
+section .upper-container p {
+  font-size: 22px;
+  font-weight: bold;
+}
+section .lower-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 280px;
+}
+section .lower-container .left-side {
+  margin-top: -58px;
+  margin-left: 20px;
+  font-size: 15px;
+}
+section .lower-container .left-side p {
+  margin-bottom: 5px;
+  font-weight: 200;
+}
+section .lower-container .left-side p:nth-child(2) {
+  margin-top: 5px;
+}
+section .lower-container .left-side p:nth-child(4) {
+  margin-bottom: 58px;
+}
+section .lower-container .left-side p:nth-child(6) {
+  margin-bottom: 30px;
+}
+section .lower-container .left-side p:nth-child(8) {
+  margin-top: 25px;
+}
+section .lower-container .left-side a {
+  font-weight: 200;
+  text-decoration: none;
+  color: black;
+}
+section .lower-container form {
+  display: grid;
+  grid-template-columns: 238px 238px;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  row-gap: 24px;
+}
+section .lower-container form .input-container {
+  font-size: 14px;
+  font-weight: 700;
+  position: relative;
+}
+section .lower-container form .input-container label {
+  display: block;
+  margin-bottom: 8px;
+}
+section .lower-container form .input-container input {
+  border: 1px solid black;
+  outline: none;
+  width: 100%;
+  border-radius: 0;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 6px 12px;
+  font-family: "Poppins", sans-serif;
+}
+section .lower-container form .input-container input:hover {
+  background-color: rgb(241, 241, 241);
+}
+section .lower-container form .input-container input:focus {
+  background-color: rgb(241, 241, 241);
+}
+section .lower-container form .input-container:nth-child(4) .fa-earth-americas {
+  position: absolute;
+  left: 12px;
+  top: 41px;
+  font-size: 18px;
+  cursor: pointer;
+}
+section .lower-container form .input-container:nth-child(5) {
+  grid-column: 1/span 2;
+}
+section .lower-container form .input-container:nth-child(5) textarea {
+  resize: none;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  border: 1px solid black;
+  outline: none;
+  padding: 6px 12px;
+  height: 90px;
+  width: 100%;
+}
+section .lower-container form .input-container:nth-child(5) textarea:hover {
+  background-color: rgb(241, 241, 241);
+}
+section .lower-container form .input-container:nth-child(5) textarea:focus {
+  background-color: rgb(241, 241, 241);
+}
+section .lower-container form .submit-btn {
+  color: white;
+  margin-top: -5px;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+  border: 1px solid black;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  width: 240px;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+}
+section .lower-container form .submit-btn:hover {
+  color: black;
+  background-color: white;
+  transition: 0.3s ease-out;
 }
 
 footer {
