@@ -37,4 +37,26 @@
     bottom: 15px;
     right: 15px;
   }
+
+  section{
+    padding-top: 60px;
+    padding-bottom: 80px;
+    .upper-container{
+      margin-bottom: 70px;
+      h1{
+        font-size: 50px;
+        margin-bottom: 8px;
+      }
+      p{
+        font-size: 20px;
+      }
+    }
+    .lower-container{
+      gap: 50px;
+      .left-side{
+        font-size: 14px;
+        margin-left: 10px;
+      }
+    }
+  }
 }

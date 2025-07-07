@@ -1,4 +1,17 @@
 @media screen and (max-width: 400px) {
+  section {
+    padding-top: 35px;
+    padding-bottom: 30px;
+  }
+  section .upper-container {
+    width: 96%;
+  }
+  section .upper-container h1 {
+    font-size: 32px;
+  }
+  section .lower-container form {
+    grid-template-columns: 300px;
+  }
   footer {
     min-height: 80svh;
     padding-bottom: 40px;
@@ -35,6 +48,9 @@
   }
 }
 @media screen and (max-width: 350px) {
+  section .lower-container form {
+    grid-template-columns: 270px;
+  }
   footer form .email-container input {
     width: 300px;
   }
@@ -43,6 +59,9 @@
   }
 }
 @media screen and (max-width: 320px) {
+  section .lower-container form {
+    grid-template-columns: 250px;
+  }
   footer form .email-container input {
     width: 270px;
   }

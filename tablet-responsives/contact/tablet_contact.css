@@ -30,4 +30,25 @@
     bottom: 15px;
     right: 15px;
   }
+  section {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+  section .upper-container {
+    margin-bottom: 70px;
+  }
+  section .upper-container h1 {
+    font-size: 50px;
+    margin-bottom: 8px;
+  }
+  section .upper-container p {
+    font-size: 20px;
+  }
+  section .lower-container {
+    gap: 50px;
+  }
+  section .lower-container .left-side {
+    font-size: 14px;
+    margin-left: 10px;
+  }
 }/*# sourceMappingURL=tablet_contact.css.map */

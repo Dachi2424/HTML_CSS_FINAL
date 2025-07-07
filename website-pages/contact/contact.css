@@ -258,6 +258,9 @@ section .lower-container form .input-container input:hover {
 section .lower-container form .input-container input:focus {
   background-color: rgb(241, 241, 241);
 }
+section .lower-container form .input-container:nth-child(4) input {
+  padding-left: 40px;
+}
 section .lower-container form .input-container:nth-child(4) .fa-earth-americas {
   position: absolute;
   left: 12px;
@@ -452,6 +455,12 @@ footer span a {
   }
   header nav .login-and-cart {
     margin-right: 0px;
+  }
+  section .upper-container h1 {
+    font-size: 80px;
+  }
+  section .lower-container {
+    gap: 190px;
   }
   footer {
     padding-top: 10px;
