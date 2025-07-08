@@ -306,10 +306,10 @@ main {
   font-size: 22px;
   font-weight: 600;
 }
-.section1 .banner-info button {
+.section1 .banner-info a {
   margin-top: 30px;
 }
-.section1 .banner-info .darkening-btn {
+.section1 .banner-info a .darkening-btn {
   font-size: 18px;
   font-weight: bold;
   background: transparent;
@@ -319,7 +319,7 @@ main {
   transition: 0.4s;
   cursor: pointer;
 }
-.section1 .banner-info .darkening-btn:hover {
+.section1 .banner-info a .darkening-btn:hover {
   background-color: black;
   color: white;
   transition: 0.4s;
