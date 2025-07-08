@@ -155,6 +155,68 @@ header{
   }
 }
 
+.opened-comment{
+  display: none;
+  height: 500px;
+  width: 340px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 20px;
+  background-color: white;
+  z-index: 999;
+  overflow: hidden;
+  .upper-side{
+    height: 17%;
+    padding: 20px 22px;
+    .receiver{
+      font-size: 18px;
+      font-weight: bold;
+      sup{
+        font-size: 11px;
+      }
+    }
+    .active-status{
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      margin-top: 5px;
+      .green-dot{
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: #43B72A;
+      }
+      p{
+        font-size: 14px;
+        font-weight: 200;
+      }
+    }
+  }
+  .middle-side{
+      background-color: #BFBFBF;
+      width: 100%;
+      height: 70%;
+  }
+  .lower-side{
+    height: 13%;
+    input{
+      width: 100%;
+      height: 100%;
+      outline: none;
+      border: none;
+      font-size: 18px;
+      font-weight: bold;
+      font-family: "Poppins", sans-serif;
+      padding-inline: 25px;
+      &::placeholder{
+        font-family: "Poppins", sans-serif;
+        color: black;
+      }
+    }
+  }
+}
+
 main{
     animation: fadeOut .7s ease-out forwards;
 }

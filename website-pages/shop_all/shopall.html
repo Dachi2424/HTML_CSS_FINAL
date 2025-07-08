@@ -54,8 +54,21 @@
       <span>Ideal weather,superb clothing</span>
     </div>
   </header>
-  <div class="floating-comment">
+  <div onclick=openComment() class="floating-comment">
     <img src="../../additional-images/comment.png" alt="floating_comment">
+  </div>
+  <div class="opened-comment">
+    <div class="upper-side">
+      <span class="receiver">30<sup>o</sup>F</span>
+      <div class="active-status">
+        <div class="green-dot"></div>
+        <p>We'll reply as soon as we can</p>
+      </div>
+    </div>
+    <div class="middle-side"></div>
+    <div class="lower-side">
+      <input type="text" placeholder="Write your message...">
+    </div>
   </div>
   <main>
     <section>
@@ -172,6 +185,13 @@
     function closeSidebar() {
       const sidebar = document.querySelector('.sidebar');
       sidebar.style.display = "none";
+    }
+
+    function openComment(){
+      const openedComment = document.querySelector('.opened-comment');
+      openedComment.style.display = "unset";
+      const floatingComment = document.querySelector(".floating-comment");
+      floatingComment.style.display = "none";
     }
   </script>
 </body>

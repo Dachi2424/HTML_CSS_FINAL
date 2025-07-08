@@ -159,6 +159,72 @@ header .lower-side a img {
   height: 50%;
 }
 
+.opened-comment {
+  display: none;
+  height: 500px;
+  width: 340px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 20px;
+  background-color: white;
+  z-index: 999;
+  overflow: hidden;
+}
+.opened-comment .upper-side {
+  height: 17%;
+  padding: 20px 22px;
+}
+.opened-comment .upper-side .receiver {
+  font-size: 18px;
+  font-weight: bold;
+}
+.opened-comment .upper-side .receiver sup {
+  font-size: 11px;
+}
+.opened-comment .upper-side .active-status {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  margin-top: 5px;
+}
+.opened-comment .upper-side .active-status .green-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #43B72A;
+}
+.opened-comment .upper-side .active-status p {
+  font-size: 14px;
+  font-weight: 200;
+}
+.opened-comment .middle-side {
+  background-color: #BFBFBF;
+  width: 100%;
+  height: 70%;
+}
+.opened-comment .lower-side {
+  height: 13%;
+}
+.opened-comment .lower-side input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  padding-inline: 25px;
+}
+.opened-comment .lower-side input::-moz-placeholder {
+  font-family: "Poppins", sans-serif;
+  color: black;
+}
+.opened-comment .lower-side input::placeholder {
+  font-family: "Poppins", sans-serif;
+  color: black;
+}
+
 main {
   animation: fadeOut 0.7s ease-out forwards;
 }
