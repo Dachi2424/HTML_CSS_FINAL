@@ -99,10 +99,11 @@ header{
     .social-media-logos{
       margin-left: 26%;
       gap: 16px;
-      & span:first-child{
+      & a:first-child{
         font-size: 14px;
       }
-      span{
+      a{
+        color: white;
         cursor: pointer;
       }
     }
@@ -471,7 +472,8 @@ footer{
   .social-media-logos{
     @include flex-box($gap: 18px);
     margin-bottom: 45px;
-    span{
+    a{
+      color: white;
       cursor: pointer;
       .fa-facebook-f{
         font-size: 14px;

@@ -98,10 +98,11 @@ header nav .social-media-logos {
   margin-left: 26%;
   gap: 16px;
 }
-header nav .social-media-logos span:first-child {
+header nav .social-media-logos a:first-child {
   font-size: 14px;
 }
-header nav .social-media-logos span {
+header nav .social-media-logos a {
+  color: white;
   cursor: pointer;
 }
 header nav .login-and-cart {
@@ -441,16 +442,17 @@ footer .social-media-logos {
   gap: 18px;
   margin-bottom: 45px;
 }
-footer .social-media-logos span {
+footer .social-media-logos a {
+  color: white;
   cursor: pointer;
 }
-footer .social-media-logos span .fa-facebook-f {
+footer .social-media-logos a .fa-facebook-f {
   font-size: 14px;
 }
-footer .social-media-logos span .fa-instagram {
+footer .social-media-logos a .fa-instagram {
   font-size: 16px;
 }
-footer .social-media-logos span .fa-pinterest-p {
+footer .social-media-logos a .fa-pinterest-p {
   font-size: 16px;
 }
 footer span {
