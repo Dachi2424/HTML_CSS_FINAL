@@ -64,10 +64,13 @@
         <div class="green-dot"></div>
         <p>We'll reply as soon as we can</p>
       </div>
+      <i onclick=closeComment() class="fa-solid fa-xmark"></i>
     </div>
     <div class="middle-side"></div>
     <div class="lower-side">
-      <input type="text" placeholder="Write your message...">
+      <textarea placeholder="Write your message..."></textarea>
+      <i class="fa-regular fa-face-smile"></i>
+      <i class="fa-solid fa-paperclip"></i>
     </div>
   </div>
   <main>
@@ -187,11 +190,17 @@
       sidebar.style.display = "none";
     }
 
-    function openComment(){
+    function openComment() {
       const openedComment = document.querySelector('.opened-comment');
       openedComment.style.display = "unset";
       const floatingComment = document.querySelector(".floating-comment");
       floatingComment.style.display = "none";
+    }
+    function closeComment() {
+      const openedComment = document.querySelector('.opened-comment');
+      openedComment.style.display = "none";
+      const floatingComment = document.querySelector('.floating-comment');
+      floatingComment.style.display = "flex";
     }
   </script>
 </body>
