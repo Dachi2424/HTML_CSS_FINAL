@@ -241,6 +241,7 @@ header .lower-side a img {
   color: black;
 }
 .opened-comment .lower-side .fa-face-smile {
+  display: none;
   position: absolute;
   right: 50px;
   top: 50%;

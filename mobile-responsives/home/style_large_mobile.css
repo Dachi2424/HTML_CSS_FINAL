@@ -18,11 +18,18 @@
     right: 12px;
     box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
   }
+  .opened-comment {
+    border-radius: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100dvh;
+  }
   main {
     animation: none;
   }
   .section1 {
-    height: 37.5svh;
+    height: 37.5dvh;
     background-position: 50% 40%;
     background-attachment: scroll;
     display: block;
@@ -31,7 +38,7 @@
     display: none;
   }
   .mobile-section1 {
-    height: 46svh;
+    height: 46dvh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,7 +46,7 @@
     gap: 0;
   }
   .section2 {
-    min-height: 80svh;
+    min-height: 80dvh;
     gap: 0;
     flex-direction: column;
   }
@@ -58,7 +65,7 @@
     font-size: 26px;
   }
   .section3 {
-    height: 59.1svh;
+    height: 59.1dvh;
     background-attachment: scroll;
     background-position: 10% center;
   }
@@ -76,7 +83,7 @@
     line-height: 24px;
   }
   .section4 {
-    min-height: 54svh;
+    min-height: 54dvh;
     padding-top: 10px;
     padding-bottom: 30px;
   }
@@ -84,7 +91,7 @@
     grid-template-columns: 1fr;
   }
   .section5 {
-    min-height: 83svh;
+    min-height: 83dvh;
     padding-top: 35px;
   }
   .section5 h1 {
@@ -99,7 +106,7 @@
     display: none;
   }
   .section6 {
-    height: 32svh;
+    height: 32dvh;
   }
   .section6 a:first-child {
     font-size: 32px;
@@ -113,7 +120,7 @@
     padding-bottom: 20px;
   }
   .section7 .s7-image-container {
-    min-height: 70svh;
+    min-height: 70dvh;
     width: 92%;
     gap: 10px;
   }
@@ -142,7 +149,7 @@
     display: none;
   }
   footer {
-    min-height: 94svh;
+    min-height: 94dvh;
   }
 }
 @media screen and (max-height: 400px) and (orientation: landscape) {
