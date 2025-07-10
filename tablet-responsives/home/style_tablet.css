@@ -1,4 +1,7 @@
 @media screen and (max-width: 970px) {
+  main {
+    animation: none;
+  }
   header {
     height: 170px;
   }

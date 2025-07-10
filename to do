@@ -1,5 +1,3 @@
-remove load animation on smaller screens
-make open comment responsive
 create sidebar for cart
 create log in
-create cards for each product (click on it on the main page)
+create cards for each product (click on it on the main page) and dont forget about load animation (opacity 0-1);
