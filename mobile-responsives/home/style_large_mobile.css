@@ -154,17 +154,17 @@
 }
 @media screen and (max-height: 400px) and (orientation: landscape) {
   .section1 {
-    height: 80svh;
+    height: 80dvh;
     background-position: center;
   }
   .section1 .banner-info {
     display: none;
   }
   .mobile-section1 {
-    height: 100svh;
+    height: 100dvh;
   }
   .section3 {
-    height: 100svh;
+    height: 100dvh;
   }
   .section5 {
     padding-bottom: 20px;
@@ -173,7 +173,7 @@
     margin-bottom: 20px;
   }
   .section6 {
-    height: 60svh;
+    height: 60dvh;
   }
   footer form {
     margin-top: 30px;

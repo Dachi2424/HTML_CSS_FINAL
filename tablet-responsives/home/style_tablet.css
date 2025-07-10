@@ -31,7 +31,7 @@
     right: 15px;
   }
   .section1 {
-    height: 80vh;
+    height: 80dvh;
     background-position: 70% 50%;
   }
   .section1 .banner-info {
@@ -55,7 +55,7 @@
     font-size: 44px;
   }
   .section3 {
-    height: 80vh;
+    height: 80dvh;
   }
   .section3 div {
     width: 740px;
@@ -83,7 +83,7 @@
     display: none;
   }
   .section6 {
-    height: 48vh;
+    height: 48dvh;
   }
   .section6 a:first-child {
     font-size: 50px;
