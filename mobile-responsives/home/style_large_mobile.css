@@ -25,6 +25,18 @@
     width: 100%;
     height: 100svh;
   }
+  .opened-comment .upper-side {
+    height: 13%;
+  }
+  .opened-comment .middle-side {
+    height: 77%;
+  }
+  .opened-comment .lower-side {
+    height: 10%;
+  }
+  .opened-comment .fa-face-smile {
+    display: none;
+  }
   main {
     animation: none;
   }
