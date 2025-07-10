@@ -37,7 +37,7 @@
     bottom: 0;
     right: 0;
     width: 100%;
-    height: 100dvh;
+    height: 100svh;
   }
 
   main{
@@ -47,7 +47,7 @@
 //section 1 and mobile-section1
 
   .section1{
-    height: 37.5dvh;
+    height: 37.5svh;
     background-position: 50% 40%;
     background-attachment: scroll;
     display: block;
@@ -57,14 +57,14 @@
   }
 
   .mobile-section1{
-    height: 46dvh;
+    height: 46svh;
     @include flex-box();
     }
 
 //section2 start
 
   .section2{
-    min-height: 80dvh;
+    min-height: 80svh;
     gap: 0;
     flex-direction: column;
     div{
@@ -86,7 +86,7 @@
 //section3 start
   
   .section3{
-    height: 59.1dvh;
+    height: 59.1svh;
     background-attachment: scroll;
     background-position: 10% center;
     div{
@@ -107,7 +107,7 @@
 //section4 start
 
   .section4{
-    min-height: 54dvh;
+    min-height: 54svh;
     padding-top: 10px;
     padding-bottom: 30px;
     .grid-logo-container{
@@ -118,7 +118,7 @@
 //section5 start
 
   .section5{
-    min-height: 83dvh;
+    min-height: 83svh;
     padding-top: 35px;
     h1{
       font-size: 32px;
@@ -138,7 +138,7 @@
 //section6 start
 
   .section6{
-    height: 32dvh;
+    height: 32svh;
     a:first-child{
       font-size: 32px;
     }
@@ -154,7 +154,7 @@
   .section7{
     padding-bottom: 20px;
     .s7-image-container{
-      min-height: 70dvh;
+      min-height: 70svh;
       width: 92%;
       gap: 10px;
       .s7-image{
@@ -187,7 +187,7 @@
   }
 
   footer{
-    min-height: 94dvh;
+    min-height: 94svh;
   }
 }
 

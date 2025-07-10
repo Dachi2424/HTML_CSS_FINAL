@@ -23,13 +23,13 @@
     bottom: 0;
     right: 0;
     width: 100%;
-    height: 100dvh;
+    height: 100svh;
   }
   main {
     animation: none;
   }
   .section1 {
-    height: 37.5dvh;
+    height: 37.5svh;
     background-position: 50% 40%;
     background-attachment: scroll;
     display: block;
@@ -38,7 +38,7 @@
     display: none;
   }
   .mobile-section1 {
-    height: 46dvh;
+    height: 46svh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,7 +46,7 @@
     gap: 0;
   }
   .section2 {
-    min-height: 80dvh;
+    min-height: 80svh;
     gap: 0;
     flex-direction: column;
   }
@@ -65,7 +65,7 @@
     font-size: 26px;
   }
   .section3 {
-    height: 59.1dvh;
+    height: 59.1svh;
     background-attachment: scroll;
     background-position: 10% center;
   }
@@ -83,7 +83,7 @@
     line-height: 24px;
   }
   .section4 {
-    min-height: 54dvh;
+    min-height: 54svh;
     padding-top: 10px;
     padding-bottom: 30px;
   }
@@ -91,7 +91,7 @@
     grid-template-columns: 1fr;
   }
   .section5 {
-    min-height: 83dvh;
+    min-height: 83svh;
     padding-top: 35px;
   }
   .section5 h1 {
@@ -106,7 +106,7 @@
     display: none;
   }
   .section6 {
-    height: 32dvh;
+    height: 32svh;
   }
   .section6 a:first-child {
     font-size: 32px;
@@ -120,7 +120,7 @@
     padding-bottom: 20px;
   }
   .section7 .s7-image-container {
-    min-height: 70dvh;
+    min-height: 70svh;
     width: 92%;
     gap: 10px;
   }
@@ -149,7 +149,7 @@
     display: none;
   }
   footer {
-    min-height: 94dvh;
+    min-height: 94svh;
   }
 }
 @media screen and (max-height: 400px) and (orientation: landscape) {
