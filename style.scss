@@ -274,7 +274,7 @@ main{
 // section1 start
 
 .section1{
-    height: 100dvh;
+    height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), 
     url(../images/banner_image.avif);
     background-size: cover;
@@ -317,7 +317,7 @@ main{
 
 .mobile-section1{
     display: none;
-    height: 46dvh;
+    height: 46svh;
     .banner-info {
         
         @include flex-box($dir: column, $gap: 10px);
@@ -355,7 +355,7 @@ main{
 // section2 start
 
 .section2{
-    min-height: 80dvh;
+    min-height: 80vh;
     @include flex-box($gap: 30px);
     div{
         height: 440px;
@@ -388,7 +388,7 @@ main{
 // section3 start
 
 .section3{
-    height: 86.8dvh;
+    height: 86.8vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(../images/section3_image.avif);
     background-size: cover;
@@ -422,7 +422,7 @@ main{
 // section 4 start
 
 .section4{
-    min-height: 54dvh;
+    min-height: 54vh;
     background-color: black;
     @include flex-box();
     .grid-logo-container{
@@ -459,7 +459,7 @@ main{
 // grid-auto-rows: minmax(300px, 35vw);
 
 .section5{
-    min-height: 118dvh;
+    min-height: 118vh;
     padding-top: 90px;
     h1{
         text-align: center;
@@ -554,7 +554,7 @@ main{
 // section6 start
 
 .section6{
-    height: 54dvh;
+    height: 54vh;
     background-color: black;
     @include flex-box($dir: column, $gap: 5px);
     a:first-child{
@@ -577,7 +577,7 @@ main{
     .s7-image-container{
         margin: 10px;
         width: 98%;
-        min-height: 70dvh;
+        min-height: 70vh;
         margin-inline: auto;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -657,7 +657,7 @@ main{
 //footer start
 
 footer{
-    min-height: 94dvh;
+    min-height: 94vh;
     background-color: black;
     color: white;
     @include flex-box($dir: column);

@@ -279,7 +279,7 @@ main {
   }
 }
 .section1 {
-  height: 100dvh;
+  height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../images/banner_image.avif);
   background-size: cover;
   background-position: top;
@@ -328,7 +328,7 @@ main {
 
 .mobile-section1 {
   display: none;
-  height: 46dvh;
+  height: 46svh;
 }
 .mobile-section1 .banner-info {
   display: flex;
@@ -367,7 +367,7 @@ main {
 }
 
 .section2 {
-  min-height: 80dvh;
+  min-height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -404,7 +404,7 @@ main {
 }
 
 .section3 {
-  height: 86.8dvh;
+  height: 86.8vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/section3_image.avif);
   background-size: cover;
   background-position: center 30%;
@@ -438,7 +438,7 @@ main {
 }
 
 .section4 {
-  min-height: 54dvh;
+  min-height: 54vh;
   background-color: black;
   display: flex;
   justify-content: center;
@@ -478,7 +478,7 @@ main {
 }
 
 .section5 {
-  min-height: 118dvh;
+  min-height: 118vh;
   padding-top: 90px;
 }
 .section5 h1 {
@@ -581,7 +581,7 @@ main {
 }
 
 .section6 {
-  height: 54dvh;
+  height: 54vh;
   background-color: black;
   display: flex;
   justify-content: center;
@@ -605,7 +605,7 @@ main {
 .section7 .s7-image-container {
   margin: 10px;
   width: 98%;
-  min-height: 70dvh;
+  min-height: 70vh;
   margin-inline: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -682,7 +682,7 @@ main {
 }
 
 footer {
-  min-height: 94dvh;
+  min-height: 94vh;
   background-color: black;
   color: white;
   display: flex;
