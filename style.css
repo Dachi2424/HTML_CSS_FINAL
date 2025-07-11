@@ -11,6 +11,10 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
@@ -119,6 +123,49 @@ header nav .login-and-cart img {
   width: 26px;
   cursor: pointer;
   margin-bottom: 3px;
+}
+header nav .login-and-cart .cart-sidebar {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 425px;
+  background-color: white;
+  color: black;
+  padding: 15px;
+}
+header nav .login-and-cart .cart-sidebar .first {
+  font-size: 20px;
+  font-weight: 600;
+}
+header nav .login-and-cart .cart-sidebar .first .second {
+  font-size: 16px;
+}
+header nav .login-and-cart .cart-sidebar .fa-xmark {
+  margin-left: 247px;
+  font-size: 24px;
+  cursor: pointer;
+}
+header nav .login-and-cart .cart-sidebar hr {
+  margin-top: 14px;
+}
+header nav .login-and-cart .cart-sidebar p {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 140px;
+}
+header nav .login-and-cart .background-darkener {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100vh;
 }
 header nav .login-and-cart .fa-bars {
   font-size: 26px;
