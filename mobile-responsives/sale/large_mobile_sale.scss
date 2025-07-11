@@ -70,6 +70,18 @@
 // landscape
 
 @media screen and (max-height: 400px) and (orientation: landscape) {
+  .opened-comment{
+    height: 100svh;
+    .upper-side{
+      height: 25%
+    }
+    .middle-side{
+      height: 55%;
+    }
+    .lower-side{
+      height: 20%;
+    }
+  }
   section{
     .product-grid-container{
       grid-template-columns: repeat(3, 1fr);

@@ -206,33 +206,47 @@
 //landscape
 
 @media screen and (max-height: 400px) and (orientation: landscape) {
-    .section1{
-      height: 80svh;
-      background-position: center;
-      .banner-info{
-        display: none;
-      }
-    }
-    .mobile-section1{
-      height: 100svh;
-    }
-    .section3{
-      height: 100svh;
-    }
-    .section5{
-      padding-bottom: 20px;
-      h1{
-        margin-bottom: 20px;
-      }
-    }
-    .section6{
-      height: 60svh;
-    }
 
-    footer{
-      form{
-        margin-top: 30px;
-        margin-bottom: 50px;
-      }
+  .opened-comment{
+    height: 100svh;
+    .upper-side{
+      height: 25%
     }
+    .middle-side{
+      height: 55%;
+    }
+    .lower-side{
+      height: 20%;
+    }
+  }
+
+  .section1{
+    height: 80svh;
+    background-position: center;
+    .banner-info{
+      display: none;
+    }
+  }
+  .mobile-section1{
+    height: 100svh;
+  }
+  .section3{
+    height: 100svh;
+  }
+  .section5{
+    padding-bottom: 20px;
+    h1{
+      margin-bottom: 20px;
+    }
+  }
+  .section6{
+    height: 60svh;
+  }
+
+  footer{
+    form{
+      margin-top: 30px;
+      margin-bottom: 50px;
+    }
+  }
 }
