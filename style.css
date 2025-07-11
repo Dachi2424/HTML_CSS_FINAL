@@ -357,20 +357,20 @@ main {
   font-size: 22px;
   font-weight: 600;
 }
-.section1 .banner-info a {
+.section1 .banner-info .darkening-btn {
   margin-top: 30px;
-}
-.section1 .banner-info a .darkening-btn {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 500;
   background: transparent;
   border: 3px solid black;
   border-radius: 50px;
-  padding: 10px 18px;
+  padding: 8px 18px;
   transition: 0.4s;
+  color: black;
+  text-decoration: none;
   cursor: pointer;
 }
-.section1 .banner-info a .darkening-btn:hover {
+.section1 .banner-info .darkening-btn:hover {
   background-color: black;
   color: white;
   transition: 0.4s;
