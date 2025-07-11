@@ -51,6 +51,7 @@ header nav .sidebar {
   gap: 20px;
   font-size: 20px;
   overflow-y: auto;
+  padding-bottom: 60px;
 }
 header nav .sidebar li {
   width: 90%;
