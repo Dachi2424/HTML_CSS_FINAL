@@ -50,6 +50,7 @@ header{
       flex-direction: column;
       gap: 20px;
       font-size: 20px;
+      overflow-y: auto;
       li{
         width: 90%;
         &:nth-child(7) a{

@@ -46,6 +46,7 @@ header nav .sidebar {
   flex-direction: column;
   gap: 20px;
   font-size: 20px;
+  overflow-y: auto;
 }
 header nav .sidebar li {
   width: 90%;
