@@ -1,5 +1,17 @@
 // responsive for small mobile
 
+@media screen and (max-width: 430px){
+  header{
+    nav{
+      .login-and-cart{
+        .cart-sidebar{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 400px) {
   .section1{
     .left-side{
