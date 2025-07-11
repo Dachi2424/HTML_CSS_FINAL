@@ -45,7 +45,14 @@
       </ul>
       <div class="login-and-cart">
         <span class="login-text">Log In</span>
-        <img src="../../additional-images/cart.png" alt="cart">
+        <img onclick=showSidecart() src="../../additional-images/cart.png" alt="cart">
+        <div class="cart-sidebar">
+          <span class="first">Cart <span class="second">(0 items)</span></span>
+          <i onclick=closeSidecart() class="fa-solid fa-xmark"></i>
+          <hr>
+          <p>Your cart is empty.</p>
+        </div>
+        <div class="background-darkener"></div>
         <i onclick=showSidebar() class="fa-solid fa-bars"></i>
       </div>
 
@@ -156,6 +163,19 @@
     function closeSidebar() {
       const sidebar = document.querySelector('.sidebar');
       sidebar.style.display = "none";
+    }
+
+    function showSidecart() {
+      const sidecart = document.querySelector(".cart-sidebar");
+      sidecart.style.display = "unset";
+      const background_darkener = document.querySelector(".background-darkener");
+      background_darkener.style.display = "unset"
+    }
+    function closeSidecart() {
+      const sidecart = document.querySelector(".cart-sidebar");
+      sidecart.style.display = "none";
+      const background_darkener = document.querySelector(".background-darkener");
+      background_darkener.style.display = "none"
     }
 
     function openComment() {
