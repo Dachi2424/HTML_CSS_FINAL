@@ -207,6 +207,19 @@
 
 @media screen and (max-height: 400px) and (orientation: landscape) {
 
+  header{
+    nav{
+      .login-and-cart{
+        .cart-sidebar{
+          width: 100%;
+          p{
+            margin-top: 100px;
+          }
+        }
+      }
+    }
+  }
+
   .opened-comment{
     height: 100svh;
     .upper-side{
