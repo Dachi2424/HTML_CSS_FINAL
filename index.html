@@ -43,7 +43,13 @@
                 <a href="https://www.pinterest.com/wixcom/" target="_blank"><i class="fa-brands fa-pinterest-p"></i></a>
             </ul>
             <div class="login-and-cart">
-                <span class="login-text">Log In</span>
+                <span onclick=showLogin() class="login-text">Log In</span>
+                <div class="login-clicked">
+                    <i onclick=closeLogin() class="fa-solid fa-xmark"></i>
+                    <h1>Demo Mode</h1>
+                    <p>To make this template yours, start editing it.</p>
+                    <button onclick=closeLogin()>OK</button>
+                </div>
                 <img onclick=showSidecart() src="../additional-images/cart.png" alt="cart">
                 <div class="cart-sidebar">
                     <span class="first">Cart <span class="second">(0 items)</span></span>
@@ -254,6 +260,15 @@
     </footer>
 
     <script>
+        function showLogin(){
+            const logindiv = document.querySelector(".login-clicked");
+            logindiv.style.display = "flex";
+        }
+        function closeLogin(){
+            const logindiv = document.querySelector(".login-clicked");
+            logindiv.style.display = "none";
+        }
+
         function showSidebar(){
             const sidebar = document.querySelector('.sidebar');
             sidebar.style.display = "flex";
