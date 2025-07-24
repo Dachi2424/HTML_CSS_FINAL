@@ -130,19 +130,17 @@
 //section5 start
 
   .section5{
-    min-height: 83svh;
+    min-height: 60svh;
     padding-top: 35px;
     h1{
       font-size: 32px;
       margin-bottom: 55px;
     }
-    .product-container{
-      .product-card{
-        width: 240px;
-        height: 376px;
-        &:nth-child(4){
+    .product-grid-container{
+      grid-template-columns: 15px 1fr 1fr 15px;
+      grid-auto-rows: minmax(280px, 70vw);
+      .product-card:nth-child(4){
         display: none;
-        }
       }
     }
   }
@@ -251,6 +249,7 @@
     h1{
       margin-bottom: 20px;
     }
+    
   }
   .section6{
     height: 60svh;

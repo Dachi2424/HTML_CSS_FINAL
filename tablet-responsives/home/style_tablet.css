@@ -79,10 +79,11 @@
     font-size: 50px;
     margin-bottom: 80px;
   }
-  .section5 .product-container {
-    gap: 20px;
+  .section5 .product-grid-container {
+    grid-template-columns: 15px 1fr 1fr 1fr 15px;
+    grid-auto-rows: minmax(280px, 50vw);
   }
-  .section5 .product-container .product-card:nth-child(5) {
+  .section5 .product-grid-container .product-card:nth-child(5) {
     display: none;
   }
   .section6 {

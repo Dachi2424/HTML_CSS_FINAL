@@ -20,11 +20,11 @@
   }
 
   .section5{
-    .product-container{
-      .product-card{
-        &:nth-child(3){
-          display: none;
-        }
+    .product-grid-container{
+      grid-template-columns: 15px 1fr 15px;
+      grid-auto-rows: minmax(220px, 140vw);
+      .product-card:nth-child(3){
+        display: none;
       }
     }
   }
