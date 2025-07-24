@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>30F</title>
+  <link rel="stylesheet" href="./product-page.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul class="sidebar">
+        <li><a href="#"><i onclick=closeSidebar() class="fa-solid fa-xmark"></i></a></li>
+        <li><span class="login-text">Log In</span></li>
+        <li><a href="./website-pages/shop_all/shopall.html">Shop All</a></li>
+        <li><a href="./website-pages/women.html/women.html">Woman</a></li>
+        <li><a href="./website-pages/men/men.html">Men</a></li>
+        <li><a href="./website-pages/sale/sale.html">Sale</a></li>
+        <li><a href="./website-pages/about/about.html">About</a></li>
+        <li><a href="./website-pages/store_policies/storepolicies.html">Store Policies</a></li>
+        <li><a href="./website-pages/contact/contact.html">Contact</a></li>
+      </ul>
+      <ul class="desktop-nav">
+        <li><a href="./website-pages/shop_all/shopall.html">Shop All</a></li>
+        <li><a href="./website-pages/women.html/women.html">Woman</a></li>
+        <li><a href="./website-pages/men/men.html">Men</a></li>
+        <li><a href="./website-pages/sale/sale.html">Sale</a></li>
+        <li><a href="./website-pages/about/about.html">About</a></li>
+        <li><a href="./website-pages/store_policies/storepolicies.html">Store Policies</a></li>
+        <li><a href="./website-pages/contact/contact.html">Contact</a></li>
+      </ul>
+      <ul class="social-media-logos">
+        <a href="https://www.facebook.com/wix" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/wix/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.pinterest.com/wixcom/" target="_blank"><i class="fa-brands fa-pinterest-p"></i></a>
+      </ul>
+      <div class="login-and-cart">
+        <span onclick=showLogin() class="login-text">Log In</span>
+        <div class="login-clicked">
+          <i onclick=closeLogin() class="fa-solid fa-xmark"></i>
+          <h1>Demo Mode</h1>
+          <p>To make this template yours, start editing it.</p>
+          <button onclick=closeLogin()>OK</button>
+        </div>
+        <img onclick=showSidecart() src="../additional-images/cart.png" alt="cart">
+        <div class="cart-sidebar">
+          <span class="first">Cart <span class="second">(0 items)</span></span>
+          <i onclick=closeSidecart() class="fa-solid fa-xmark"></i>
+          <hr>
+          <p>Your cart is empty.</p>
+        </div>
+        <div class="background-darkener"></div>
+        <i onclick=showSidebar() class="fa-solid fa-bars"></i>
+      </div>
+
+    </nav>
+    <div class="lower-side">
+      <a href="#"><img src="../additional-images/logo.png" alt="logo"></a>
+      <span>Ideal weather,superb clothing</span>
+    </div>
+  </header>
+  <div onclick=openComment() class="floating-comment">
+    <img src="./additional-images/comment.png" alt="floating_comment">
+  </div>
+  <div class="opened-comment">
+    <div class="upper-side">
+      <span class="receiver">30<sup>o</sup>F</span>
+      <div class="active-status">
+        <div class="green-dot"></div>
+        <p>We'll reply as soon as we can</p>
+      </div>
+      <i onclick=closeComment() class="fa-solid fa-xmark"></i>
+    </div>
+    <div class="middle-side"></div>
+    <div class="lower-side">
+      <textarea placeholder="Write your message..."></textarea>
+      <i class="fa-regular fa-face-smile"></i>
+      <i class="fa-solid fa-paperclip"></i>
+    </div>
+  </div>
+  <main>
+
+  </main>
+  <footer>
+    <form>
+      <h1>Subscribe Form</h1>
+      <div class="email-container">
+        <label for="email">Email *</label>
+        <input type="email" id="email" required>
+      </div>
+      <div class="checkbox-container">
+        <input type="checkbox" id="check" required>
+        <label for="check">Yes, subscribe me to your newsletter. *</label>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+    <div class="address">
+      <span>info@my-domain.com</span>
+      <span>123-456-7890</span>
+      <span>500 Terry Francine Street</span>
+      <span>San Francisco, CA 94158</span>
+    </div>
+    <ul class="social-media-logos">
+      <a href="https://www.facebook.com/wix" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/accounts/login/?next=%2Fwix%2F&source=omni_redirect" target="_blank"><i
+          class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.pinterest.com/wixcom/" target="_blank"><i class="fa-brands fa-pinterest-p"></i></a>
+    </ul>
+    <span>&#169;2035 by 30°F. Powered and secured by <a
+        href="https://manage.wix.com/account/websites?referralAdditionalInfo=Route" target="_blank">Wix</a></span>
+  </footer>
+
+  <script>
+    function showLogin() {
+      const logindiv = document.querySelector(".login-clicked");
+      logindiv.style.display = "flex";
+    }
+    function closeLogin() {
+      const logindiv = document.querySelector(".login-clicked");
+      logindiv.style.display = "none";
+    }
+
+    function showSidebar() {
+      const sidebar = document.querySelector('.sidebar');
+      sidebar.style.display = "flex";
+    }
+    function closeSidebar() {
+      const sidebar = document.querySelector('.sidebar');
+      sidebar.style.display = "none";
+    }
+
+    function showSidecart() {
+      const sidecart = document.querySelector(".cart-sidebar");
+      sidecart.style.display = "unset";
+      const background_darkener = document.querySelector(".background-darkener");
+      background_darkener.style.display = "unset"
+    }
+    function closeSidecart() {
+      const sidecart = document.querySelector(".cart-sidebar");
+      sidecart.style.display = "none";
+      const background_darkener = document.querySelector(".background-darkener");
+      background_darkener.style.display = "none"
+    }
+
+    function openComment() {
+      const openedComment = document.querySelector('.opened-comment');
+      openedComment.style.display = "unset";
+      const floatingComment = document.querySelector(".floating-comment");
+      floatingComment.style.display = "none";
+    }
+    function closeComment() {
+      const openedComment = document.querySelector('.opened-comment');
+      openedComment.style.display = "none";
+      const floatingComment = document.querySelector('.floating-comment');
+      floatingComment.style.display = "flex";
+    }
+  </script>
+</body>
+
+</html>
