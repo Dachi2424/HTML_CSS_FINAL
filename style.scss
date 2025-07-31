@@ -571,15 +571,48 @@ main{
         justify-items: center;
         column-gap: 20px;
         .product-card{
+            overflow: hidden;
             position: relative;
+            transition: .4s;
             @include flex-box($just: flex-start, $dir: column, $gap: 5px);
-            a{
-                img{
-                    width: 100%;
-                    height: 90%;
-                    object-fit: cover;
-                    object-position: center;
-                    cursor: pointer;
+            &:hover > div > a > span{
+                transform: translate(50% ,-30px);
+            }
+            div{
+                position: relative;
+                width: 100%;
+                height: 90%;
+                cursor: pointer;
+                overflow: hidden;
+                transition: .4s;
+                &:hover > a > img{
+                    transform: scale(1.1);
+                    transition: 0.4s;
+                }
+                a{  
+                    position: relative;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                        transition: .4s;
+                    }
+                    .ascending-text{
+                        position: absolute;
+                        font-size: 14px;
+                        font-weight: bold;
+                        text-decoration: none;
+                        color: black;
+                        width: 100%;
+                        padding: 17px 30px;
+                        background-color: rgba(255, 255, 255, 0.6);
+                        text-align: center;
+                        top: 0;
+                        right: 50%;
+                        transform: translate(50%, 20px);
+                        transition: .4s;
+                    }
                 }
             }
             .new-tag{
@@ -595,6 +628,7 @@ main{
                 cursor: pointer;
             }
             .im-product-text{
+                overflow: hidden;
                 font-size: 15px;
                 font-weight: 200;
                 margin-top: 15px;

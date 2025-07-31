@@ -593,21 +593,56 @@ main {
        column-gap: 20px;
 }
 .section5 .product-grid-container .product-card {
+  overflow: hidden;
   position: relative;
+  transition: 0.4s;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   gap: 5px;
 }
-.section5 .product-grid-container .product-card a img {
+.section5 .product-grid-container .product-card:hover > div > a > span {
+  transform: translate(50%, -30px);
+}
+.section5 .product-grid-container .product-card div {
+  position: relative;
   width: 100%;
   height: 90%;
+  cursor: pointer;
+  overflow: hidden;
+  transition: 0.4s;
+}
+.section5 .product-grid-container .product-card div:hover > a > img {
+  transform: scale(1.1);
+  transition: 0.4s;
+}
+.section5 .product-grid-container .product-card div a {
+  position: relative;
+}
+.section5 .product-grid-container .product-card div a img {
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  cursor: pointer;
+  transition: 0.4s;
+}
+.section5 .product-grid-container .product-card div a .ascending-text {
+  position: absolute;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  padding: 17px 30px;
+  background-color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  top: 0;
+  right: 50%;
+  transform: translate(50%, 20px);
+  transition: 0.4s;
 }
 .section5 .product-grid-container .product-card .new-tag {
   position: absolute;
@@ -622,6 +657,7 @@ main {
   cursor: pointer;
 }
 .section5 .product-grid-container .product-card .im-product-text {
+  overflow: hidden;
   font-size: 15px;
   font-weight: 200;
   margin-top: 15px;

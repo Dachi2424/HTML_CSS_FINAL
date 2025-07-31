@@ -60,7 +60,7 @@
                 <div class="background-darkener"></div>
                 <i onclick=showSidebar() class="fa-solid fa-bars"></i>
             </div>
-            
+
         </nav>
         <div class="lower-side">
             <a href="#"><img src="../additional-images/logo.png" alt="logo"></a>
@@ -138,25 +138,38 @@
             <div class="product-grid-container">
                 <i class="fa-solid fa-angle-left"></i>
                 <div class="product-card">
-                    <a href="./product-page.html"><img src="./product images/women-jackets/women_white_jacket.avif" alt="women_white_jacket"></a>
+                    <div>
+                        <a href="./product-page.html"><img src="./product images/women-jackets/women_white_jacket.avif"
+                                alt="women_white_jacket"><span class="ascending-text">Quick View</span></a>
+                    </div>
                     <span class="new-tag">New</span>
                     <span class="im-product-text">i'm a product</span>
                     <span class="product-price">$250.00</span>
                 </div>
                 <div class="product-card">
-                    <a href="./product-page.html"><img src="./product images/men-jackets/black_jacket.avif" alt="men_black_jacket"></a>
+                    <div>
+                        <a href="./product-page.html"><img src="./product images/men-jackets/black_jacket.avif"
+                                alt="men_black_jacket"><span class="ascending-text">Quick View</span></a>
+                    </div>
+
                     <span class="new-tag">New</span>
                     <span class="im-product-text">i'm a product</span>
                     <span class="product-price">$250.00</span>
                 </div>
                 <div class="product-card">
-                    <a href="./product-page.html"><img src="./product images/men-hats/green_hat.avif" alt="men_green_hat"></a>
+                    <div>
+                        <a href="./product-page.html"><img src="./product images/men-hats/green_hat.avif"
+                                alt="men_green_hat"><span class="ascending-text">Quick View</span></a>
+                    </div>
                     <span class="new-tag">New</span>
                     <span class="im-product-text">i'm a product</span>
                     <span class="product-price">$40.00</span>
                 </div>
                 <div class="product-card">
-                    <a href="./product-page.html"><img src="./product images/women-gloves/women_purple_gloves.avif" alt="women_purple_gloves"></a>
+                    <div>
+                        <a href="./product-page.html"><img src="./product images/women-gloves/women_purple_gloves.avif"
+                                alt="women_purple_gloves"><span class="ascending-text">Quick View</span></a>
+                    </div>
                     <span class="new-tag">New</span>
                     <span class="im-product-text">i'm a product</span>
                     <span class="product-price">$80.00</span>
@@ -246,58 +259,60 @@
         </div>
         <ul class="social-media-logos">
             <a href="https://www.facebook.com/wix" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/accounts/login/?next=%2Fwix%2F&source=omni_redirect" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.instagram.com/accounts/login/?next=%2Fwix%2F&source=omni_redirect" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
             <a href="https://www.pinterest.com/wixcom/" target="_blank"><i class="fa-brands fa-pinterest-p"></i></a>
         </ul>
         <span>&#169;2035 by 30°F. Powered and secured by <a
-                href="https://manage.wix.com/account/websites?referralAdditionalInfo=Route" target="_blank">Wix</a></span>
+                href="https://manage.wix.com/account/websites?referralAdditionalInfo=Route"
+                target="_blank">Wix</a></span>
     </footer>
 
     <script>
-        function showLogin(){
+        function showLogin() {
             const logindiv = document.querySelector(".login-clicked");
             logindiv.style.display = "flex";
         }
-        function closeLogin(){
+        function closeLogin() {
             const logindiv = document.querySelector(".login-clicked");
             logindiv.style.display = "none";
         }
 
-        function showSidebar(){
+        function showSidebar() {
             const sidebar = document.querySelector('.sidebar');
             sidebar.style.display = "flex";
         }
-        function closeSidebar(){
+        function closeSidebar() {
             const sidebar = document.querySelector('.sidebar');
-            sidebar.style.display = "none";   
+            sidebar.style.display = "none";
         }
 
-        function showSidecart(){
+        function showSidecart() {
             const sidecart = document.querySelector(".cart-sidebar");
             sidecart.style.display = "unset";
             const background_darkener = document.querySelector(".background-darkener");
             background_darkener.style.display = "unset"
         }
-        function closeSidecart(){
+        function closeSidecart() {
             const sidecart = document.querySelector(".cart-sidebar");
             sidecart.style.display = "none";
             const background_darkener = document.querySelector(".background-darkener");
             background_darkener.style.display = "none"
         }
 
-        function openComment(){
+        function openComment() {
             const openedComment = document.querySelector('.opened-comment');
             openedComment.style.display = "unset";
             const floatingComment = document.querySelector(".floating-comment");
             floatingComment.style.display = "none";
         }
-        function closeComment(){
+        function closeComment() {
             const openedComment = document.querySelector('.opened-comment');
             openedComment.style.display = "none";
             const floatingComment = document.querySelector('.floating-comment');
             floatingComment.style.display = "flex";
         }
-    
+
     </script>
 </body>
 

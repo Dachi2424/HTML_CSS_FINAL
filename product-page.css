@@ -410,6 +410,8 @@ section .wrapper-div .directory .main-span .inner-span {
   font-weight: 200;
 }
 section .wrapper-div .directory .main-span a {
+  color: black;
+  text-decoration: none;
   cursor: pointer;
 }
 section .wrapper-div .product-info {
