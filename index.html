@@ -90,15 +90,16 @@
         <section class="section1">
             <div class="banner-info">
                 <h1>ARE YOU <u>READY</u> TO HIT THE SLOPES?</h1>
+                
                 <span>We've got you covered</span>
-                <a href="./website-pages/shop_all/shopall.html" class="darkening-btn">Shop Now</a>
+                <a href="./website-pages/shop_all/shopall.html" class="darkening-btn1">Shop Now</a>
             </div>
         </section>
         <section class="mobile-section1">
             <div class="banner-info">
                 <h1>ARE YOU <u>READY</u> TO HIT THE SLOPES?</h1>
                 <span>We've got you covered</span>
-                <button class="darkening-btn">Shop Now</button>
+                <button class="darkening-btn2">Shop Now</button>
             </div>
         </section>
         <section class="section2">
@@ -235,7 +236,7 @@
                     <a href="#">#wix,#website,#freewebsite, #websitetemplate,#wix.com</a>
                 </div>
             </div>
-            <button class="darkening-btn">Load More</button>
+            <button onclick=loadMore() class="darkening-btn">Load More</button>
         </section>
     </main>
     <footer>
@@ -311,6 +312,16 @@
             openedComment.style.display = "none";
             const floatingComment = document.querySelector('.floating-comment');
             floatingComment.style.display = "flex";
+        }
+        function loadMore() {
+            const images = document.querySelectorAll('.s7-image');
+            images.forEach(image => {
+                image.style.display = "unset";
+            });
+            const button = document.querySelector('.darkening-btn');
+            if (button) {
+               button.style.display = "none"; 
+            }
         }
 
     </script>
