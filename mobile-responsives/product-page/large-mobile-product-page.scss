@@ -1,0 +1,156 @@
+// responsive for large mobile
+
+@media screen and (max-width: 768px) {
+  header{
+    height: 140px;
+    nav{
+      height: 25%;
+    }
+    .lower-side{
+      height: 75%;
+      a{
+        img{
+          width: 77px;
+        }
+      }
+    }
+  }
+  .floating-comment{
+    width: 50px;
+    height: 50px;
+    bottom: 12px;
+    right: 12px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .opened-comment{
+    border-radius: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100dvh;
+    .upper-side{
+      height: 13%;
+    }
+    .middle-side{
+      height: 77%;
+    }
+    .lower-side{
+      height: 10%;
+    }
+    .fa-face-smile{
+      display: none;
+    }
+  }
+
+  main{
+    animation: none;
+  }
+  
+  section{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    .wrapper-div{
+      min-height: 100svh;
+      width: 96%;
+      .product-info{
+        margin-top: 40px;
+        .purchase-details{
+          .product-info-section{
+            font-size: 16px;
+          }
+          .refund-section{
+            font-size: 16px;
+          }
+          .shipping-section{
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+  footer{
+    min-height: 94svh;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  section{
+    padding-top: 40px;
+    padding-bottom: 0;
+    .wrapper-div{
+      width: 84%;
+      .product-info{
+        margin-top: 30px;
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax(300px, 120vw) 1fr;
+        row-gap: 30px;
+        .purchase-details{
+          width: 100%;
+          grid-template-rows: 70px 52px 280px 1fr 70px 70px 70px;
+          .product-code-container{
+            .mobile-code{
+              display: unset;
+              font-size: 15px;
+              font-weight: 200;
+              margin-bottom: 20px;
+            }
+            .product-name{
+              margin-top: 10px;
+            }
+            .product-code{
+              display: none;
+            }
+          }
+          .mobile-details{
+            display: unset;
+            font-size: 15px;
+            font-weight: 200;
+          }
+        }
+      }
+      .product-description{
+        display: none;
+      }
+    }
+  }
+}
+
+
+// landscape
+
+@media screen and (max-height: 400px) and (orientation: landscape) {
+
+  header{
+    nav{
+      .login-and-cart{
+        .cart-sidebar{
+          width: 100%;
+          p{
+            margin-top: 100px;
+          }
+        }
+      }
+    }
+  }
+
+  .opened-comment{
+    height: 100svh;
+    .upper-side{
+      height: 25%
+    }
+    .middle-side{
+      height: 55%;
+    }
+    .lower-side{
+      height: 20%;
+    }
+  }
+
+  footer{
+    form{
+      margin-top: 30px;
+      margin-bottom: 50px;
+    }
+  }
+}

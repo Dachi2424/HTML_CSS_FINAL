@@ -425,6 +425,9 @@ section{
         //aq gavcherdi (grid-template-rows unda davaaregulito)
         grid-template-rows: 89px 50px 300px 75px 75px 75px;
         .product-code-container{
+          .mobile-code{
+            display: none;
+          }
           .product-name{
             font-size: 22px;
             font-weight: 600;
@@ -491,6 +494,9 @@ section{
               text-decoration: underline;
             }
           }
+        }
+        .mobile-details{
+          display: none;
         }
         .product-info-section{
           display: flex;

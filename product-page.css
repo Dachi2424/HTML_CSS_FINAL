@@ -437,6 +437,9 @@ section .wrapper-div .product-info .purchase-details {
   grid-template-columns: 1fr;
   grid-template-rows: 89px 50px 300px 75px 75px 75px;
 }
+section .wrapper-div .product-info .purchase-details .product-code-container .mobile-code {
+  display: none;
+}
 section .wrapper-div .product-info .purchase-details .product-code-container .product-name {
   font-size: 22px;
   font-weight: 600;
@@ -501,6 +504,9 @@ section .wrapper-div .product-info .purchase-details form button[type=submit] {
 }
 section .wrapper-div .product-info .purchase-details form button[type=submit]:hover {
   text-decoration: underline;
+}
+section .wrapper-div .product-info .purchase-details .mobile-details {
+  display: none;
 }
 section .wrapper-div .product-info .purchase-details .product-info-section {
   display: flex;
