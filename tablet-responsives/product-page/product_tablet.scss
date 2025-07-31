@@ -1,0 +1,90 @@
+// responsive for tablet
+
+@media screen and  (max-width: 970px) {
+  main{
+    animation: none;
+  }
+  
+  header{
+    height: 170px;
+    nav{
+      padding: 10px 10px 0 30px;
+      .desktop-nav{
+        display: none;
+      }
+      .social-media-logos{
+        margin-left: 0;
+      }
+      .login-and-cart{
+        .login-text{
+          display: none;
+        }
+        .fa-bars{
+          display: unset;
+        }
+      }
+    }
+    .lower-side{
+      font-size: 14px;
+      a{
+        img{
+          width: 170px;
+        }
+      }
+    }
+  }
+
+  .floating-comment{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  section{
+    padding-top: 100px;
+    padding-bottom: 70px;
+    .wrapper-div{
+      width: 680px;
+      .directory{
+        .mobile-text{
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          font-size: 16px;
+          text-decoration: none;
+          color: black;
+          font-weight: 200;
+          cursor: pointer;
+          span{
+            cursor: pointer;
+            font-size: 20px;
+          }
+        }
+        .second-link{
+          display: none;
+        }
+        .slash{
+          display: none;
+        }
+        .current-page-text{
+          display: none;
+        }
+        .main-span{
+          display: none;
+        }
+      }
+      .product-info{
+        margin-top: 50px;
+        grid-template-columns: 13fr 12fr;
+        .purchase-details{
+          grid-template-rows: 70px 40px 270px 60px 60px 60px;
+        }
+      }
+      .product-description{
+        width: 100%;
+      }
+    }
+  }
+}

@@ -379,7 +379,10 @@ section{
       font-size: 15px;
       display: flex;
       gap: 5px;
-      a{
+      .mobile-text{
+        display: none;
+      }
+      .second-link{
         text-decoration: none;
         color:black;
         font-weight: 300;

@@ -390,7 +390,10 @@ section .wrapper-div .directory {
   display: flex;
   gap: 5px;
 }
-section .wrapper-div .directory a {
+section .wrapper-div .directory .mobile-text {
+  display: none;
+}
+section .wrapper-div .directory .second-link {
   text-decoration: none;
   color: black;
   font-weight: 300;

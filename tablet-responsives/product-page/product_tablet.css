@@ -1,0 +1,79 @@
+@media screen and (max-width: 970px) {
+  main {
+    animation: none;
+  }
+  header {
+    height: 170px;
+  }
+  header nav {
+    padding: 10px 10px 0 30px;
+  }
+  header nav .desktop-nav {
+    display: none;
+  }
+  header nav .social-media-logos {
+    margin-left: 0;
+  }
+  header nav .login-and-cart .login-text {
+    display: none;
+  }
+  header nav .login-and-cart .fa-bars {
+    display: unset;
+  }
+  header .lower-side {
+    font-size: 14px;
+  }
+  header .lower-side a img {
+    width: 170px;
+  }
+  .floating-comment {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    bottom: 15px;
+    right: 15px;
+  }
+  section {
+    padding-top: 100px;
+    padding-bottom: 70px;
+  }
+  section .wrapper-div {
+    width: 680px;
+  }
+  section .wrapper-div .directory .mobile-text {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    font-weight: 200;
+    cursor: pointer;
+  }
+  section .wrapper-div .directory .mobile-text span {
+    cursor: pointer;
+    font-size: 20px;
+  }
+  section .wrapper-div .directory .second-link {
+    display: none;
+  }
+  section .wrapper-div .directory .slash {
+    display: none;
+  }
+  section .wrapper-div .directory .current-page-text {
+    display: none;
+  }
+  section .wrapper-div .directory .main-span {
+    display: none;
+  }
+  section .wrapper-div .product-info {
+    margin-top: 50px;
+    grid-template-columns: 13fr 12fr;
+  }
+  section .wrapper-div .product-info .purchase-details {
+    grid-template-rows: 70px 40px 270px 60px 60px 60px;
+  }
+  section .wrapper-div .product-description {
+    width: 100%;
+  }
+}/*# sourceMappingURL=product_tablet.css.map */
