@@ -368,11 +368,11 @@ main{
 //section start
 
 section{
-  padding-top: 160px;
-  padding-bottom: 160px;
+  padding-top: 175px;
+  padding-bottom: 220px;
   .wrapper-div{
     min-height: 100vh;
-    width: 890px;
+    width: 910px;
     margin-inline: auto;
     .directory{
       width: 100%;
@@ -406,7 +406,7 @@ section{
       margin-top: 65px;
       width: 100%;
       display: grid;
-      grid-template-columns: 9fr 7fr;
+      grid-template-columns: 14fr 12fr;
       grid-template-rows: 1fr;
       justify-items: center;
       img{
@@ -420,7 +420,7 @@ section{
         display: grid;
         grid-template-columns: 1fr;
         //aq gavcherdi (grid-template-rows unda davaaregulito)
-        grid-template-rows: 89px 50px 1fr 1fr 1fr 1fr;
+        grid-template-rows: 89px 50px 300px 75px 75px 75px;
         .product-code-container{
           .product-name{
             font-size: 22px;
@@ -437,17 +437,23 @@ section{
           font-weight: 600;
         }
         form{
+          height: 100%;
+          
           .size-text{
             font-size: 18px;
             font-weight: 600;
             display: block;
+            margin-bottom: 10px;
           }
           select{
+            width: 100%;
+            padding: 10px 6px;
             outline: none;
             font-family: "Poppins", sans-serif;
             font-weight: bold;
             font-size: 18px;
             cursor: pointer;
+            margin-bottom: 25px;
           }
           .product-quantity{
             display: flex;
@@ -456,13 +462,17 @@ section{
             label{
               font-weight: 200;
               font-size: 15px;
+              margin-bottom: 5px;
               display: inline;
             }
             #quantity{
               font-size: 15px;
               width: 100px;
+              padding: 8px 6px 8px 44px;
               outline: none;
               display: inline;
+              font-family: "Poppins", sans-serif;
+              margin-bottom: 30px;
             }
           }
           button[type="submit"]{
@@ -480,18 +490,54 @@ section{
           }
         }
         .product-info-section{
-          display: block;
+          display: flex;
+          align-items: center;
+          font-weight: bold;
+          font-size: 18px;
           cursor: pointer;
+          border-bottom: 1px solid rgb(70, 70, 70);
+          span{            
+            margin-left: auto;
+            font-size: 22px;
+            font-weight: 300;
+            cursor: pointer;
+          }
         }
         .refund-section{
-          display: block;
+          display: flex;
+          align-items: center;
+          font-weight: bold;
+          font-size: 18px;
           cursor: pointer;
+          border-bottom: 1px solid rgb(70, 70, 70);
+          span{
+            margin-left: auto;
+            font-weight: 300;
+            font-size: 22px;
+            cursor: pointer;
+          }
         }
         .shipping-section{
-          display: block;
+          display: flex;
+          align-items: center;
+          font-weight: bold;
+          font-size: 18px;
           cursor: pointer;
+          span{
+            margin-left: auto;
+            font-weight: 300;
+            font-size: 22px;
+            cursor: pointer;
+          }
         }
       }
+    }
+    .product-description{
+      font-size: 15px;
+      width: 55%;
+      margin-top: 60px;
+      color: rgb(70, 70, 70);
+      font-size: 200;
     }
   }
 }
